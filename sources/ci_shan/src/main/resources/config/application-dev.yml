@@ -1,6 +1,0 @@
-spring:
-  datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://1localhost:3306/webosapp?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: alvin

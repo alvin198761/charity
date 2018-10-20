@@ -2,6 +2,7 @@ package org.alvin.cishan.sys.auth.adminsysuser;
 
 import org.alvin.cishan.sys.util.MD5Util;
 import org.alvin.cishan.sys.util.Page;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,7 +15,7 @@ import java.util.List;
  * @date:2018-08-10 09:21:48
  **/
 @Service
-public class AdminSysUserBus {
+public class AdminSysUserBus implements InitializingBean {
 	// private Log logger = LogFactory.getLog(getClass());
 	@Autowired
 	private AdminSysUserDao dao; // 注入用户数据访问层
@@ -24,7 +25,6 @@ public class AdminSysUserBus {
 	 **/
 	@Transactional
 	public int save(AdminSysUser adminSysUser) {
-		adminSysUser.setPassword(MD5Util.getMD5("888888"));
 		return dao.save(adminSysUser);
 	}
 
@@ -78,5 +78,18 @@ public class AdminSysUserBus {
 	@Transactional
 	public int updatePassword(Integer user_id, String password) {
 		return dao.updatePassword(user_id, MD5Util.getMD5(password));
+	}
+
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		AdminSysUserCond cond = new AdminSysUserCond();
+		if(this.dao.queryCount(cond) == 0){
+			AdminSysUser adminSysUser = new AdminSysUser();
+			adminSysUser.setName("admin");
+			adminSysUser.setPassword(MD5Util.getMD5("admin"));
+			adminSysUser.setGender((byte)1);
+			this.save(adminSysUser);
+		}
 	}
 }

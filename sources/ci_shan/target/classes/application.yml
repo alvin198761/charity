@@ -3,5 +3,15 @@ server:
   compression:
     enabled: true
     mime-types: application/json,application/xml,text/html,text/xml,text/plain,application/javascript,text/css
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/webosapp?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: alvin
   profiles:
     active: dev
+
+application:
+  version: 1.0

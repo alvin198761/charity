@@ -47,36 +47,36 @@ module.exports = {
                   },*/
     }
   },
-  pages : {
-    index : {
-      // page 的入口
-      entry: "src/main.js",
-// 模板来源
-      template: "public/index.html",
-// 在 dist/index.html 的输出
-      filename: "index.html",
-// 当使用 title 选项时，
-// template 中的 title 标签需要是 <%= htmlWebpackPlugin.options.title %>
-      title: "IndexPage",
-// 在这个页面中包含的块，默认情况下会包含
-// 提取出来的通用 chunk 和 vendor chunk。
-      chunks: ["chunk-vendors", "chunk-common", "index"]
-    },
-//     index2: {
-// // page 的入口
-//       entry: "src/views/indexSimple/main.js",
-// // 模板来源
-//       template: "public/indexSimple.html",
-// // 在 dist/index.html 的输出
-//       filename: "indexSimple.html",
-// // 当使用 title 选项时，
-// // template 中的 title 标签需要是 <%= htmlWebpackPlugin.options.title %>
-//       title: "jhd",
-// // 在这个页面中包含的块，默认情况下会包含
-// // 提取出来的通用 chunk 和 vendor chunk。
-//       chunks: ["chunk-vendors", "chunk-common", "index2"]
-//     }
-  },
+   pages: {
+          index: {
+              // page 的入口
+              entry: "src/main.js",
+              // 模板来源
+              template: "public/index.html",
+              // 在 dist/index.html 的输出
+              filename: "index.html",
+              // 当使用 title 选项时，
+              // template 中的 title 标签需要是 <%= htmlWebpackPlugin.options.title %>
+              title: "慈善管理系统",
+              // 在这个页面中包含的块，默认情况下会包含
+              // 提取出来的通用 chunk 和 vendor chunk。
+              chunks: ["chunk-vendors", "chunk-common", "index"]
+          },
+          login: {
+              // page 的入口
+              entry: "src/login/main.js",
+              // 模板来源
+              template: "public/login.html",
+              // 在 dist/index.html 的输出
+              filename: "login.html",
+              // 当使用 title 选项时，
+              // template 中的 title 标签需要是 <%= htmlWebpackPlugin.options.title %>
+              title: "慈善管理系统登录",
+              // 在这个页面中包含的块，默认情况下会包含
+              // 提取出来的通用 chunk 和 vendor chunk。
+              chunks: ["chunk-vendors", "chunk-common", "login"]
+          }
+      },
     pluginOptions:{
 /*        new webpack.optimize.CommonsChunkPlugin('common.js'),
         new webpack.ProvidePlugin({

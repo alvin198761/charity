@@ -1,0 +1,541 @@
+2018-10-20 14:37:41,881[DateUtil.java:94][INFO]:Sat Oct 20 00:00:00 CST 2018
+2018-10-20 14:37:41,888[DateUtil.java:95][INFO]:Sat Oct 20 23:59:59 CST 2018
+2018-10-20 14:37:41,890[DateUtil.java:96][INFO]:1
+2018-10-20 14:39:42,960[DateUtil.java:94][INFO]:Sat Oct 20 00:00:00 CST 2018
+2018-10-20 14:39:42,966[DateUtil.java:95][INFO]:Sat Oct 20 23:59:59 CST 2018
+2018-10-20 14:39:42,969[DateUtil.java:96][INFO]:1
+2018-10-20 14:41:35,782[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 7064 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 14:41:35,786[SpringApplication.java:654][INFO]:No active profile set, falling back to default profiles: default
+2018-10-20 14:41:38,233[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 14:41:38,264[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 14:41:38,264[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 14:41:38,277[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 14:41:38,378[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 14:41:38,597[DirectJDKLog.java:180][INFO]:Stopping service [Tomcat]
+2018-10-20 14:41:38,630[LoggingFailureAnalysisReporter.java:42][ERROR]:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2018-10-20 14:42:57,961[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 14988 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 14:42:57,966[SpringApplication.java:654][INFO]:No active profile set, falling back to default profiles: default
+2018-10-20 14:43:00,455[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 14:43:00,468[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 14:43:00,469[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 14:43:00,480[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 14:43:00,586[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 14:43:00,817[DirectJDKLog.java:180][INFO]:Stopping service [Tomcat]
+2018-10-20 14:43:00,849[LoggingFailureAnalysisReporter.java:42][ERROR]:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2018-10-20 14:45:09,610[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 11864 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 14:45:09,614[SpringApplication.java:654][INFO]:No active profile set, falling back to default profiles: default
+2018-10-20 14:45:11,969[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 14:45:11,983[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 14:45:11,983[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 14:45:11,996[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 14:45:12,098[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 14:45:12,319[DirectJDKLog.java:180][INFO]:Stopping service [Tomcat]
+2018-10-20 14:45:12,347[LoggingFailureAnalysisReporter.java:42][ERROR]:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2018-10-20 14:47:00,939[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 16048 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 14:47:00,943[SpringApplication.java:654][INFO]:No active profile set, falling back to default profiles: default
+2018-10-20 14:47:02,981[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 14:47:02,994[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 14:47:02,994[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 14:47:03,008[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 14:47:03,108[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 14:47:03,350[DirectJDKLog.java:180][INFO]:Stopping service [Tomcat]
+2018-10-20 14:47:03,381[LoggingFailureAnalysisReporter.java:42][ERROR]:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2018-10-20 14:48:24,056[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 8456 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 14:48:24,060[SpringApplication.java:654][INFO]:No active profile set, falling back to default profiles: default
+2018-10-20 14:48:26,328[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 14:48:26,340[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 14:48:26,340[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 14:48:26,351[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 14:48:26,452[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 14:48:26,680[DirectJDKLog.java:180][INFO]:Stopping service [Tomcat]
+2018-10-20 14:48:26,706[LoggingFailureAnalysisReporter.java:42][ERROR]:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2018-10-20 14:49:27,103[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 16328 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 14:49:27,109[SpringApplication.java:654][INFO]:No active profile set, falling back to default profiles: default
+2018-10-20 14:49:29,435[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 14:49:29,450[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 14:49:29,451[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 14:49:29,463[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 14:49:29,565[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 14:49:29,933[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-20 14:49:29,944[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-20 14:49:30,185[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-20 14:49:30,338[HikariDataSource.java:381][INFO]:HikariPool-1 - Shutdown initiated...
+2018-10-20 14:49:30,348[HikariDataSource.java:383][INFO]:HikariPool-1 - Shutdown completed.
+2018-10-20 14:49:30,352[DirectJDKLog.java:180][INFO]:Stopping service [Tomcat]
+2018-10-20 14:49:30,372[SpringApplication.java:837][ERROR]:Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userAuthenticationProvider': Unsatisfied dependency expressed through field 'userSecurityService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userSecurityService': Unsatisfied dependency expressed through field 'adminSysUserBus'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminSysUserBus' defined in file [F:\github_dir\charity\sources\ci_shan\target\classes\org\alvin\cishan\sys\auth\adminsysuser\AdminSysUserBus.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'webosapp.admin_sys_user' doesn't exist
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at org.alvin.cishan.Application.main(Application.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:497)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userSecurityService': Unsatisfied dependency expressed through field 'adminSysUserBus'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminSysUserBus' defined in file [F:\github_dir\charity\sources\ci_shan\target\classes\org\alvin\cishan\sys\auth\adminsysuser\AdminSysUserBus.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'webosapp.admin_sys_user' doesn't exist
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminSysUserBus' defined in file [F:\github_dir\charity\sources\ci_shan\target\classes\org\alvin\cishan\sys\auth\adminsysuser\AdminSysUserBus.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'webosapp.admin_sys_user' doesn't exist
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1694)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	... 38 common frames omitted
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'webosapp.admin_sys_user' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:234)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1402)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:620)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:657)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:688)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:700)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:771)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:792)
+	at org.alvin.cishan.sys.auth.adminsysuser.AdminSysUserDao.queryCount(AdminSysUserDao.java:96)
+	at org.alvin.cishan.sys.auth.adminsysuser.AdminSysUserDao$$FastClassBySpringCGLIB$$8d7000b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.alvin.cishan.sys.auth.adminsysuser.AdminSysUserDao$$EnhancerBySpringCGLIB$$41c88574.queryCount(<generated>)
+	at org.alvin.cishan.sys.auth.adminsysuser.AdminSysUserBus.afterPropertiesSet(AdminSysUserBus.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690)
+	... 48 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'webosapp.admin_sys_user' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1966)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:666)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:605)
+	... 65 common frames omitted
+2018-10-20 14:53:02,185[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 18048 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 14:53:02,190[SpringApplication.java:654][INFO]:No active profile set, falling back to default profiles: default
+2018-10-20 14:53:04,563[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 14:53:04,577[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 14:53:04,577[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 14:53:04,590[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 14:53:04,690[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 14:53:05,052[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-20 14:53:05,062[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-20 14:53:05,307[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-20 14:53:05,415[HikariDataSource.java:381][INFO]:HikariPool-1 - Shutdown initiated...
+2018-10-20 14:53:05,422[HikariDataSource.java:383][INFO]:HikariPool-1 - Shutdown completed.
+2018-10-20 14:53:05,425[DirectJDKLog.java:180][INFO]:Stopping service [Tomcat]
+2018-10-20 14:53:05,449[SpringApplication.java:837][ERROR]:Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userAuthenticationProvider': Unsatisfied dependency expressed through field 'userSecurityService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userSecurityService': Unsatisfied dependency expressed through field 'adminSysUserBus'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminSysUserBus' defined in file [F:\github_dir\charity\sources\ci_shan\target\classes\org\alvin\cishan\sys\auth\adminsysuser\AdminSysUserBus.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'webosapp.admin_sys_user' doesn't exist
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at org.alvin.cishan.Application.main(Application.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:497)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userSecurityService': Unsatisfied dependency expressed through field 'adminSysUserBus'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminSysUserBus' defined in file [F:\github_dir\charity\sources\ci_shan\target\classes\org\alvin\cishan\sys\auth\adminsysuser\AdminSysUserBus.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'webosapp.admin_sys_user' doesn't exist
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminSysUserBus' defined in file [F:\github_dir\charity\sources\ci_shan\target\classes\org\alvin\cishan\sys\auth\adminsysuser\AdminSysUserBus.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'webosapp.admin_sys_user' doesn't exist
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1694)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	... 38 common frames omitted
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1]; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'webosapp.admin_sys_user' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:234)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1402)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:620)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:657)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:688)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:700)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:771)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForObject(JdbcTemplate.java:792)
+	at org.alvin.cishan.sys.auth.adminsysuser.AdminSysUserDao.queryCount(AdminSysUserDao.java:96)
+	at org.alvin.cishan.sys.auth.adminsysuser.AdminSysUserDao$$FastClassBySpringCGLIB$$8d7000b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:746)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at org.alvin.cishan.sys.auth.adminsysuser.AdminSysUserDao$$EnhancerBySpringCGLIB$$612a1a03.queryCount(<generated>)
+	at org.alvin.cishan.sys.auth.adminsysuser.AdminSysUserBus.afterPropertiesSet(AdminSysUserBus.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1753)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1690)
+	... 48 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'webosapp.admin_sys_user' doesn't exist
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3976)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3912)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2486)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:1966)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:666)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:605)
+	... 65 common frames omitted
+2018-10-20 15:03:56,028[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 11032 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 15:03:56,033[SpringApplication.java:654][INFO]:No active profile set, falling back to default profiles: default
+2018-10-20 15:03:58,622[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 15:03:58,638[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 15:03:58,638[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 15:03:58,652[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 15:03:58,749[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 15:03:59,086[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-20 15:03:59,096[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-20 15:03:59,331[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-20 15:03:59,506[HikariDataSource.java:381][INFO]:HikariPool-1 - Shutdown initiated...
+2018-10-20 15:03:59,520[HikariDataSource.java:383][INFO]:HikariPool-1 - Shutdown completed.
+2018-10-20 15:03:59,528[DirectJDKLog.java:180][INFO]:Stopping service [Tomcat]
+2018-10-20 15:03:59,557[SpringApplication.java:837][ERROR]:Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.profiles.active' in value "${spring.profiles.active}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at org.alvin.cishan.Application.main(Application.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:497)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.profiles.active' in value "${spring.profiles.active}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:839)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1083)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	... 23 common frames omitted
+2018-10-20 15:05:19,216[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 10576 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 15:05:19,220[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-20 15:05:21,560[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 15:05:21,574[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 15:05:21,575[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 15:05:21,586[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 15:05:21,707[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 15:05:22,089[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-20 15:05:22,099[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-20 15:05:22,341[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-20 15:05:22,422[HikariDataSource.java:381][INFO]:HikariPool-1 - Shutdown initiated...
+2018-10-20 15:05:22,426[HikariDataSource.java:383][INFO]:HikariPool-1 - Shutdown completed.
+2018-10-20 15:05:22,430[DirectJDKLog.java:180][INFO]:Stopping service [Tomcat]
+2018-10-20 15:05:22,449[SpringApplication.java:837][ERROR]:Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'application.version' in value "${application.version}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:376)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:548)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:386)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1242)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1230)
+	at org.alvin.cishan.Application.main(Application.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:497)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'application.version' in value "${application.version}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:839)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1083)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:581)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:370)
+	... 23 common frames omitted
+2018-10-20 15:06:15,535[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 7672 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 15:06:15,538[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-20 15:06:17,857[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 15:06:17,871[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 15:06:17,871[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 15:06:17,883[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 15:06:17,983[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 15:06:18,345[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-20 15:06:18,355[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-20 15:06:18,608[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-20 15:06:20,530[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-20 15:06:20,544[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-20 15:06:20,577[StartupInfoLogger.java:59][INFO]:Started Application in 5.521 seconds (JVM running for 9.307)
+2018-10-20 15:06:39,727[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-20 15:15:58,945[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 10252 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 15:15:58,949[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-20 15:16:01,422[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 15:16:01,436[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 15:16:01,436[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 15:16:01,448[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 15:16:01,554[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 15:16:02,038[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-20 15:16:02,047[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-20 15:16:02,372[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-20 15:16:04,762[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-20 15:16:04,794[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-20 15:16:04,825[StartupInfoLogger.java:59][INFO]:Started Application in 6.451 seconds (JVM running for 10.87)
+2018-10-20 15:16:16,815[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-20 15:17:52,217[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 18128 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 15:17:52,220[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-20 15:17:54,471[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 15:17:54,485[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 15:17:54,485[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 15:17:54,497[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 15:17:54,595[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 15:17:54,923[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-20 15:17:54,936[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-20 15:17:55,169[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-20 15:17:57,021[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-20 15:17:57,035[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-20 15:17:57,061[StartupInfoLogger.java:59][INFO]:Started Application in 5.343 seconds (JVM running for 9.279)
+2018-10-20 15:18:09,335[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-20 15:20:09,300[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 11700 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 15:20:09,304[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-20 15:20:11,491[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 15:20:11,503[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 15:20:11,503[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 15:20:11,514[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 15:20:11,621[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 15:20:11,999[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-20 15:20:12,009[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-20 15:20:12,251[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-20 15:20:14,109[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-20 15:20:14,122[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-20 15:20:14,147[StartupInfoLogger.java:59][INFO]:Started Application in 5.332 seconds (JVM running for 9.452)
+2018-10-20 15:20:23,368[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-20 15:54:45,873[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 8712 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-20 15:54:45,877[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-20 15:54:48,171[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-20 15:54:48,184[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-20 15:54:48,184[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-20 15:54:48,198[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-20 15:54:48,297[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-20 15:54:48,649[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-20 15:54:48,660[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-20 15:54:48,900[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-20 15:54:50,925[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-20 15:54:50,939[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-20 15:54:50,964[StartupInfoLogger.java:59][INFO]:Started Application in 5.593 seconds (JVM running for 9.931)
+2018-10-20 15:56:20,012[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
