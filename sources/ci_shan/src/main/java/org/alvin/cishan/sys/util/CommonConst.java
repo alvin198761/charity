@@ -1,0 +1,425 @@
+package org.alvin.cishan.sys.util;
+
+/**
+ * @author 高振中
+ * @功能说明 系统共用的常量
+ * @date 2017-10-17
+ */
+public interface CommonConst {
+
+	// 性别
+	byte GENDER_MALE = 1;// 男
+	byte GENDER_FEMALE = 2;// 女
+	byte GENDER_UNKNOWN = 3;// 未知
+	byte GENDER_SECRECY = 4;// 保密
+
+	// 成员是否启用
+	byte MEMBER_ENABLED = 1;// 启用
+	byte MEMBER_DISABLED = 0;// 禁用
+
+	// 注册时使用的平台类型
+	byte ROM_ANDROID = 1; // 安卓
+	byte ROM_IOS = 2; // ios
+	byte ROM_BROWSER = 3; // 浏览器
+	byte ROM_SYSTEM = 4; // 系统
+	byte ROM_WEIXIN = 5; // 微信
+
+	// 会员身份类型
+	byte AUTH_GUEST = 1; // 潜客
+	byte AUTH_MEMBER = 2;// 会员
+	// short GUEST = 1; // 潜在客户
+	// short MEMBER = 2; // 正式会员
+	// 员工身份类型
+	byte AUTH_EMPLOYEE = 0; // 普通员工
+	byte AUTH_ADMIN = 1; // 加盟商
+	//
+	// short AUTH_MEMBER_ADMIN = 4; // 会员-管理员
+	// short AUTH_MEMBER_EMPLOYEE = 5; // 会员-员工
+	// // app 角色常量
+	// Integer APP_ROLE_EMPLOYEE = 1;
+	// Integer APP_ROLE_MEMBER = 2;
+	// short PERSON_SYSTEM_ROLE_MEMBER = 1; // 人员身份 ，会员
+	// short PERSON_SYSTEM_ROLE_EMPLOYEE = 2; // 人员身份， 员工
+	// short PERSON_SYSTEM_ROLE_EMP_AND_MEM = 3; // 人员身份， 员工 + 会员
+
+	// 会员类型 : 意向 潜在客户 正式会员
+
+	// 会员卡计费方式
+	short CHARGE_MODE_TIME = 1; // 计时
+	short CHARGE_MODE_COUNT = 2; // 计次
+	short CHARGE_MODE_STORE = 3; // 储值
+	short CHARGE_MODE_MONTH = 4; // 计月
+	short CHARGE_MODE_FREE = 5; // 免费
+
+	// 会员卡有效期方式
+	short INDATE_YEAR = 1;// 按年
+	short INDATE_MONTH = 2;// 按月
+	short INDATE_DAY = 3;// 按月
+
+	// 会员卡是否在售 课种
+	short ON_SALE_YES = 1;// 在售
+	short ON_SALE_NO = 2;// 下架
+	short ON_SALE_DEL = 3;// 删除
+	// 删除标记
+	short DELETE_REMARK_DELETED = 1;// 已删除
+	short DELETE_REMARK_NORMAL = 0;// 正常(未删除)
+	short DELETE_REMARK_UP = 2;// 被升级
+	// 推送范围
+	short PUSH_SCOPE_DEVICE = 1;// 单台设备
+	short PUSH_SCOPE_MEMBER = 2;// 单个用户
+	short PUSH_SCOPE_BRANCH = 3; // 单个门店
+	short PUSH_SCOPE_ALL = 4; // 所有门店的用户
+	// 准许入场标记
+	short ALLOW_ENTER_YES = 1;//// 准许入场
+	short ALLOW_ENTER_NO = 0;//// 不准许入场
+
+	// 开卡类型
+	short OPT_TYPE_NEW = 1;// 新卡
+	short OPT_TYPE_CONTINUE = 2;// 续卡
+
+	// 动态类型
+	short DYN_IMAGE = 0;// 图片
+	short DYN_VEDIO = 1;// 视频
+
+	// 隐私类型
+	short PRI_SHOW_ALLPEOPLE = 0;// 多所有人可见
+	short PRI_SHOW_ONLYONE = 1;// 对自己可见
+	short PRI_SHOW_FRIENDS = 2;// 对好友可见
+	short PRI_SHOW_CHECKED = 3;// 选中可见
+	short PRI_HIDE_CHECKED = 4;// 选中不可见
+
+	// 发布的类型
+	short PUBLISH_DYN_PERSONAL = 0;// 个人
+	short PUBLISH_DYN_FORWARD = 1;// 转发(分享)
+	short PUBLISH_DYN_FIRM = 2;// 企业(动岚发布)
+	short PUBLISH_DYN_POPULARIZE = 3;// 推广（门店或其他广告商）
+
+	// 用户状态
+	short ONLINE_STATUS = 0;// 在线
+	short OFFLINE_STATUS = 1;// 离线
+	// 卡表的状态
+	// byte CARD_PAUSE_VALID = 1;// 停卡有效
+	byte CARD_PAUSE_EXPIRE = 0;// 停卡过期(完成)
+
+	short ENTER_STATUS_YES = 1;// 入场
+	short ENTER_STATUS_NO = 0;// 离场
+
+	byte LOCKER_STATUS_IDLE = 1;// :空闲
+	byte LOCKER_STATUS_OCCUPY = 2;// 占用
+	byte LOCKER_STATUS_FAULT = 3;// 故障
+	byte LOCKER_STATUS_UNPAID = 4;// 未支付被占用
+
+	// 体测仪状态常亮
+	short BCA_STATUS_IDLE = 1;// 正常
+	short BCA_STATUS_OCCUPY = 2;// 占用
+	short BCA_STATUS_OFFLINE = 3;// 离线
+
+	// 定金类型
+	byte DEPOSIT_BUS_TYPE_CARD = 1;// 购卡
+	byte DEPOSIT_BUS_TYPE_LOCKER = 2;// 租柜
+	byte DEPOSIT_BUS_TYPE_COURSE = 3;// 私教
+
+	byte ORDER_CREATE_ERROR_DEPOSIT_STATUS = -1;// 定金状态错误
+	byte ORDER_CREATE_ERROR_NOT_FOUND_PROTOCOL = -2;// 没有找到协议
+	byte ORDER_CREATE_ERROR_LOCKER_STATUS = -3;// 租柜状态不是空闲，无法换柜或租柜
+
+	byte ORDER_PAY_ERROR_CARD_EXIST = -4;// 该卡号在当前门店下已存在
+	byte ORDER_PAY_ERROR_ACCOUNT_NOT_EXIST = -5;// 帐号不存在!
+	byte ORDER_PAY_ERROR_REMAIN_NOT_ENOUGH = -6;// 余额不足!
+	byte ORDER_PAY_ERROR_STATUS_WRONG = -7;// 定单状态不正确!
+	byte ORDER_PAY_ERROR_MONEY_INCORRECT = -8;// 金额不符
+	byte ORDER_PAY_ERROR_LOCKER_STATUS = -9;// 储物柜没有被租用，无法退柜
+	byte ORDER_PAY_ERROR_LOCKER_OTHER_ORDER = -10;// 储物柜被他人租用，无法继续推柜
+	byte ORDER_PAY_ERROR_DEPOSIT_STATUS = -11;// 定金不是未使用状态，无法退定金
+	byte ORDER_PAY_ERROR_LOCKER_MEMBER_CHANGE = -12;// 租柜所属会员发生变化，无法继续转柜
+	byte ORDER_PAY_ERROR_QUIT_CARD_FINISH = -13;// 退卡已经完成
+	byte ORDER_PAY_ERROR_COURSE_MEMBER_CHANGE = -14;// 私教所属会员发生变化，无法继续转会员
+	byte ORDER_PAY_ERROR_TRAN_CARD_FINISH = -15;// 卡所属会员已经发生变化,无法继续支付
+	byte ORDER_PAY_ERROR_COURSE_SURPLUS_COUNT = -16;// 私教剩余课时为0，无法退私教
+	byte ORDER_CREATE_ERROR_LOCKER_NOT_FOUND = -17;// 没有找到租柜
+	byte ORDER_PAY_ERROR_CHIP_EXIST = -18;// 该卡号在当前门店下已存在
+	// 定单类型
+	byte ORDER_BUS_TYPE_DEPOSIT = 11;// pc买定金
+	byte ORDER_BUS_TYPE_DEPOSITQUIT = 13;// pc退定金
+	byte ORDER_BUS_TYPE_STORE_ADD = 14;// 储值卡充值钱
+	byte ORDER_BUS_TYPE_STORE_QUIT = 15;// 储值卡退钱
+	byte ORDER_BUS_TYPE_STORE_ADD_APP = 16;// app储值卡充值钱
+
+	byte ORDER_BUS_TYPE_DEPOSIT_APP = 31;// app买定金
+	byte ORDER_BUS_TYPE_CARD_OPEN_APP = 32;// APP卖卡,业务系统取卡
+	byte ORDER_BUS_TYPE_DEPOSIT_APP_OTHER = 33;// app为他人买定金
+	byte ORDER_BUS_TYPE_CARD_OPEN_APP_OTHER = 34;// app为他人买卡
+
+	byte ORDER_BUS_TYPE_CARD_OPEN = 21;// 开卡
+	byte ORDER_BUS_TYPE_CARD_UP = 22;// 卡级
+	byte ORDER_BUS_TYPE_CARD_CONTINUE = 23;// 续卡
+	byte ORDER_BUS_TYPE_CARD_PATCH = 24;// 补卡
+	byte ORDER_BUS_TYPE_CARD_TRAN = 25;// 转卡
+	byte ORDER_BUS_TYPE_CARD_QUIT = 26;// 退卡
+
+	byte ORDER_BUS_TYPE_CARD_PAUSE = 27;// 停卡
+	byte ORDER_BUS_TYPE_CARD_EXTEND = 28;// 延期
+	byte ORDER_BUS_TYPE_CARD_LOST = 29;// 挂失
+
+	byte ORDER_BUS_TYPE_LEASE_LOCKER = 41;// 租柜
+	byte ORDER_BUS_TYPE_CONTINUE_LOCKER = 42;// 续柜
+	byte ORDER_BUS_TYPE_QUIT_LOCKER = 43;// 退柜
+	byte ORDER_BUS_TYPE_TRAN_LOCKER = 44;// 转柜
+	byte ORDER_BUS_TYPE_CHANGE_LOCKER = 45;// 换柜
+
+	byte ORDER_BUS_TYPE_MEMBER_COURSE = 51;// 购买私教
+	byte ORDER_BUS_TYPE_MEMBER_COURSE_MEMBER_TRANSFER = 52;// 私教转会员
+	byte ORDER_BUS_TYPE_MEMBER_COURSE_TEACH_TRANSFER = 53;// 私教转教练
+	byte ORDER_BUS_TYPE_MEMBER_GROUP_COURSE = 54;// 购买小团课
+	byte ORDER_BUS_TYPE_MEMBER_GROUP_COURSE_MEMBER_TRANSFER = 55;// 小团课转会员
+	byte ORDER_BUS_TYPE_APP_MEMBER_COURSE = 56;// APP购买私教
+	byte ORDER_BUS_TYPE_APP_MEMBER_COURSE_OTHER = 57;// APP为他人买私教
+	byte ORDER_BUS_TYPE_APP_MEMBER_GROUP_COURSE = 58;// APP购买小团课
+	byte ORDER_BUS_TYPE_APP_MEMBER_GROUP_COURSE_OTHER = 59;// APP为他人买小团课
+
+	byte ORDER_BUS_TYPE_MEMBER_COURSE_QUIT = 60;// 退私教
+	byte ORDER_BUS_TYPE_MEMBER_GROUP_COURSE_QUIT = 61;// 退小团课
+
+	byte ORDER_BUS_TYPE_TEACH = 4;// 私教
+	byte ORDER_BUS_TYPE_GROUP = 5;// 团课
+
+	byte ORDER_STATUS_CREATE = 1;// 已下单
+	byte ORDER_STATUS_PAY = 2;// 已支付
+	byte ORDER_STATUS_SEND = 3;// 发货(完成)
+	byte ORDER_STATUS_CANCEL = 4;// 已取消
+
+	// 支付方式
+	// byte APP_PAY_WAY_ALIPAY = 1;// 支付宝
+	// byte APP_PAY_WAY_WEICHAT = 2;// 微信
+
+	byte PAY_WAY_CASH = 1;// 现金
+	byte PAY_WAY_ALIPAY = 2;// 支付宝
+	byte PAY_WAY_WEICHAT = 3;// 微信
+	byte PAY_WAY_POS = 4;// 刷卡
+	byte PAY_WAY_STORE = 5;// 储值
+
+	short ORDER_FOR_OTHER = 1;// 为别人下单
+	short ORDER_FOR_SELF = 0;// 为自下单
+
+	byte DEPOSIT_STATUS_UNUSE = 1;// 未使用
+	byte DEPOSIT_STATUS_OCCUPY = 2;// 已占用
+	byte DEPOSIT_STATUS_USED = 3;// 已使用
+	byte DEPOSIT_STATUS_QUIT = 4;// 已退
+	byte DEPOSIT_STATUS_USEDQUIT = 5;// 已使用退
+
+	short WORK_DONE_OK = 1;// 已完成
+	short WORK_DONE_NO = 0;// 未完成
+
+	short WORK_PUSHED_OK = 1;// 已完成
+	short WORK_PUSHED_NO = 0;// 未完成
+
+	short APPOINT_TYPE_EMP = 1; // 1教练
+	short APPOINT_TYPE_MEMBER = 2; // 2会员
+	short APPOINT_TYPE_PC = 3;// 3前台
+
+	int COURSE_CATEGORY_ONE = 1;// 一对一私教
+	int COURSE_CATEGORY_GROUP = 2;// 小团课
+	int COURSE_CATEGORY_FREE_GROUP = 3;// 免费团课
+
+	byte APPOINT_CREATE = 1;// 发起预约
+	byte APPOINT_CONFIRMED = 2;// 已确认未签到
+	byte APPOINT_CANCEL = 3;// 已取消
+	byte APPOINT_SIGN = 4;// 已签到
+
+	byte GROUP_COURSE_APPOINT_CONFIRMED = 1;// 预约成功
+	byte GROUP_COURSE_APPOINT_CANCEL = 2;// 已取消
+	byte GROUP_COURSE_APPOINT_SIGN = 3;// 已签到
+
+	byte FREE_GROUP_COURSE_APPLY_CONFIRMED = 1;// 报名成功
+	byte FREE_GROUP_COURSE_APPLY_CANCEL = 2;// 已取消
+
+	// 举报类型
+	byte REPORT_TYPE_CONTENT_DYN = 1;// 给动态举报
+	byte REPORT_TYPE_CONTENT_REPLY = 2;// 给评论举报
+
+	// 会员转介绍常量
+	byte INTRODUCE_STATUS_UNCONFIRMED = 0; // 会员转介绍状态 未确认
+	byte INTRODUCE_STATUS_CONFIRM = 1;// 会员转介绍状态 已确认
+	byte INTRODUCE_STATUS_FAIL = 2;// 会员转介绍状态 推荐失败
+
+	byte INTRODUCE_MAX_COUNT = 6;// 会员未确认推荐人数上限
+
+	// 开卡类型
+	byte OPEN_TYPE_NEW = 1;// 新开卡
+	byte OPEN_TYPE_UP = 2;// 卡升级
+	byte OPEN_TYPE_CONTINUE = 3;// 续卡
+	byte OPEN_TYPE_PATCH = 4;// 补卡
+	// 平台类型
+	byte PLATFORM_ANDROID = 1;// 安卓
+	byte PLATFORM_PC = 3;// 业务系统PC
+	byte PLATFORM_IOS = 2;// IOS
+	byte PLATFORM_GZ = 4;// 公众号
+
+	// 评价类型
+	byte EVALUATE_COURSE_TYPE = 1;// 对课程评价
+	byte EVALUATE_COACH_TYPE = 2;// 对教练评价
+	byte EVALUATE_ROOM_TYPE = 3;// 对场地评价
+	// 储值卡账单类型
+	byte STORE_BILL_TYPE_ADD = 1;// 储值卡充值
+	byte STORE_BILL_TYPE_QUIT = 2;// 储值卡退钱
+	byte STORE_BILL_TYPE_CONSUME = 3;// 储值卡消费
+	// 评论状态
+	byte REPLY_ENABLED_NORMAL = 1;// 正常
+	byte REPLY_ENABLED_SHIELD = 2;// 屏蔽
+	byte REPLY_ENABLED_DELETE = 3;// 删除
+	// 动态状态
+	byte DYNMSG_ENABLED_NORMAL = 1;// 正常
+	byte DYNMSG_ENABLED_SHIELD = 2;// 屏蔽
+	byte DYNMSG_ENABLED_DELETE = 3;// 删除
+	// 举报状态
+	byte REPORT_STATUS_TREATED = 1;// 已处理
+	byte REPORT_STATUS_UNTREATED = 2;// 未处理
+
+	// 主页新闻类型
+	byte HOME_TYPE_CONTENT = 1;// 内容类型
+	byte HOME_TYPE_URL = 2;// URL链接类型 输入框
+	// 会所动态类型
+	byte DYNAMIC_TYPE_CONTENT = 1;// 内容类型
+	byte DYNAMIC_TYPE_URL = 2;// URL链接类型 输入框
+
+	// 意见反馈状态
+	byte FEEDBACK_STATUS_TREATED = 1;// 已回复
+	byte FEEDBACK_STATUS_UNTREATED = 2;// 未回复
+
+	// 二维码动作
+	byte QRCODE_ACTION_ENTER = 1;
+
+	// 说明须知类型
+	byte EXPLAIN_TYPE_BUY_CARD = 1;// 买卡须知
+	byte EXPLAIN_TYPE_BUY_SI = 2;// 买私教须知
+	byte EXPLAIN_TYPE_BUY_STORE = 3;// 买储值须知
+	byte EXPLAIN_TYPE_CARD = 4;// 买卡说明
+	byte EXPLAIN_TYPE_SI = 5;// 买私教说明
+	// pc使用反馈状态
+	byte UNREPAIR_USEFEEDBACK_STATUS = 1;// 未修复
+	byte REPAIR_USEFEEDBACK_STATUS = 2;// 已修复
+
+	short TIME_LINE_TYPE_MEMBER = 1;  //会员
+	short TIME_LINE_TYPE_EMPLOYEE = 2; //教练
+	short TIME_LINE_TYPE_ROOM = 3;    //教室
+
+	short TIME_LINE_OCC_TYPE_GROUP_COURSE = 1;    //团课排课
+	short TIME_LINE_OCC_TYPE_COURSE_APPOINT = 2;    //私教预约
+	short TIME_LINE_OCC_TYPE_GROUP_COURSE_APPOINT = 3;    //团课私教预约
+	short TIME_LINE_OCC_TYPE_FREE_GROUP_COURSE_APPLY = 4;    //免费团课报名
+
+
+	//意向类型
+	byte CONSULTATION_TYPE_JOIN = 1; //托管
+	byte CONSULTATION_TYPE_TRAINING = 2; //培训教练
+	byte CONSULTATION_TYPE_SOFT = 3; //软件
+
+	//合作类型
+	byte CONSULTATION_SUB_TYPE_JOIN = 1;//健身房加盟
+	byte CONSULTATION_SUB_TYPE_COO = 2; //健身房合作
+	byte CONSULTATION_SUB_TYPE_MRG = 3; //健身房管理
+
+	//学习类型
+	byte CONSULTATION_SUB_TYPE_SIGLE_COURSE = 1;//私教培训
+	byte CONSULTATION_SUB_TYPE_GYM = 2;//操课培训
+	byte CONSULTATION_SUB_TYPE_ALL = 3;//全能培训
+
+	//软件类型
+	byte CONSULTATION_SUB_TYPE_TEAM = 1;//团队版
+	byte CONSULTATION_SUB_TYPE_ENTE = 2;//企业版
+	byte CONSULTATION_SUB_TYPE_FLAG = 3;//旗舰版
+
+	//推送相关
+	//推送不同业务类型
+	byte PUSH_TASK_SERVICE_CARD = 4;//卡相关的推送
+	byte PUSH_TASK_SERVICE_SENSITIVE = 2;//敏感字相关的推送
+	byte PUSH_TASK_SERVICE_DYNMSG = 3;//动态相关的推送
+	byte PUSH_TASK_SERVICE_COURSE = 5;//课程相关的推送
+	byte PUSH_TASK_SERVICE_LOCKER = 6;//柜子相关的推送
+	byte PUSH_TASK_SERVICE_DEPOSIT = 7;//定金相关的推送
+	byte PUSH_TASK_SERVICE_STORE = 8;//储值相关的推送
+	byte PUSH_TASK_SERVICE_MEMBER = 9;//储值相关的推送
+	byte PUSH_TASK_SERVICE_DEVICE_BCA = 10;//体测相关的推送
+	//1、推送记录状态
+	byte PUSH_RECORD_STATUS_UNREAD = 0;//未读
+	byte PUSH_RECORD_STATUS_READ = 1;//已读
+	//2、推送提示方式
+	byte PUSH_MESSAGE_ACTION_TYPE_RING = 1; //1=铃声
+	byte PUSH_MESSAGE_ACTION_TYPE_SHOCK = 2; //2=震动
+	byte PUSH_MESSAGE_ACTION_TYPE_TWINKLE = 3; //，3=闪灯
+	//3、推送消息形式
+	byte PUSH_MESSAGE_TYPE_COLUMN = 0;//栏位
+	byte PUSH_MESSAGE_TYPE_TRAN = 1;//透传
+	//4、透传业务类型
+	byte PUSH_MESSAGE_BUS_TYPE_DYN_PRAISE = 1;//动态点赞
+	byte PUSH_MESSAGE_BUS_TYPE_DYN_FOLLOW = 2;//关注
+	byte PUSH_MESSAGE_BUS_TYPE_DYN_REPLY = 3;//动态评论
+
+	byte PUSH_MESSAGE_BUS_TYPE_MEMBER_BIRTHDAY = 4;//会员成日提醒
+	byte PUSH_MESSAGE_BUS_TYPE_CHANGE_AUTH = 5;//身份变化
+	byte PUSH_MESSAGE_BUS_TYPE_UPDATE_PASSWORD = 89;//修改密码
+	byte PUSH_MESSAGE_BUS_TYPE_CARD_ENTER = 6;//刷卡入场
+	byte PUSH_MESSAGE_BUS_TYPE_FEED_BACK = 10;//意见反馈
+
+	byte PUSH_MESSAGE_BUS_TYPE_PC_OPENCARD = ORDER_BUS_TYPE_CARD_OPEN;//PC买卡 21
+	byte PUSH_MESSAGE_BUS_TYPE_APP_OPENCARD = ORDER_BUS_TYPE_CARD_OPEN_APP;//app买卡 32
+	byte PUSH_MESSAGE_BUS_TYPE_APP_OTHER_OPENCARD = ORDER_BUS_TYPE_CARD_OPEN_APP_OTHER;// app为他人买卡;//app买卡 34
+	byte PUSH_MESSAGE_BUS_TYPE_CONTINUE_CARD = ORDER_BUS_TYPE_CARD_CONTINUE;//续卡 23
+	byte PUSH_MESSAGE_BUS_TYPE_CARD_PATCH = ORDER_BUS_TYPE_CARD_PATCH;// 补卡 24
+	byte PUSH_MESSAGE_BUS_TYPE_CARD_TRAN = ORDER_BUS_TYPE_CARD_TRAN;//  转卡 25
+	byte PUSH_MESSAGE_BUS_TYPE_CARD_QUIT = ORDER_BUS_TYPE_CARD_QUIT;//26 退卡
+	byte PUSH_MESSAGE_BUS_TYPE_CARD_UP = ORDER_BUS_TYPE_CARD_UP;//22 卡级
+
+	byte PUSH_MESSAGE_BUS_TYPE_APP_MEMBER_COURSE = ORDER_BUS_TYPE_APP_MEMBER_COURSE;// 56 APP购买私教
+	byte PUSH_MESSAGE__BUS_TYPE_APP_MEMBER_COURSE_OTHER = ORDER_BUS_TYPE_APP_MEMBER_COURSE_OTHER;//57;// APP为他人买私教
+	byte PUSH_MESSAGE_BUS_TYPE_APP_MEMBER_GROUP_COURSE = ORDER_BUS_TYPE_APP_MEMBER_GROUP_COURSE;// 58 APP购买小团课
+	byte PUSH_MESSAGE_BUS_TYPE_APP_MEMBER_GROUP_COURSE_OTHER = ORDER_BUS_TYPE_APP_MEMBER_GROUP_COURSE_OTHER;//59 APP为他人买小团课
+	byte PUSH_MESSAGE_BUS_TYPE_PC_MEMBER_COURSE = ORDER_BUS_TYPE_MEMBER_COURSE;//51 购买私教
+	byte PUSH_MESSAGE_BUS_TYPE_PC_MEMBER_COURSE_MEMBER_TRANSFER = ORDER_BUS_TYPE_MEMBER_COURSE_MEMBER_TRANSFER;//52;// 私教转会员
+	byte PUSH_MESSAGE_BUS_TYPE_PC_MEMBER_COURSE_TEACH_TRANSFER = ORDER_BUS_TYPE_MEMBER_COURSE_TEACH_TRANSFER;// 53;// 私教转教练
+	byte PUSH_MESSAGE_BUS_TYPE_PC_MEMBER_GROUP_COURSE = ORDER_BUS_TYPE_MEMBER_GROUP_COURSE;//54;// 购买小团课
+	byte PUSH_MESSAGE_BUS_TYPE_PC_MEMBER_GROUP_COURSE_MEMBER_TRANSFER = ORDER_BUS_TYPE_MEMBER_GROUP_COURSE_MEMBER_TRANSFER;// 55;// 小团课转会员
+	byte PUSH_MESSAGE_BUS_TYPE_PC_MEMBER_GROUP_COURSE_QUIT = ORDER_BUS_TYPE_MEMBER_GROUP_COURSE_QUIT;//60  退小团课
+	byte PUSH_MESSAGE_BUS_TYPE_PC_MEMBER_COURSE_QUIT = ORDER_BUS_TYPE_MEMBER_COURSE_QUIT;//61 退私教
+
+	byte PUSH_MESSAGE_BUS_TYPE_CARD_COUNT = 80;//卡加次
+	byte PUSH_MESSAGE_BUS_TYPE_DEPOSIT_APP = ORDER_BUS_TYPE_DEPOSIT_APP;//31APP买定金
+	byte PUSH_MESSAGE_BUS_TYPE_APP_OTHER = ORDER_BUS_TYPE_DEPOSIT_APP_OTHER;//33 app为他人买定金
+	byte PUSH_MESSAGE_BUS_TYPE_DEPOSIT = ORDER_BUS_TYPE_DEPOSIT;// 11;// pc买定金
+	byte PUSH_MESSAGE_BUS_TYPE_DEPOSITQUIT = ORDER_BUS_TYPE_DEPOSITQUIT;//13;// pc退定金
+
+	byte PUSH_MESSAGE_BUS_TYPE_LEASE_LOCKER = ORDER_BUS_TYPE_LEASE_LOCKER;// 41;// 租柜
+	byte PUSH_MESSAGE_BUS_TYPE_CONTINUE_LOCKER = ORDER_BUS_TYPE_CONTINUE_LOCKER;// 42;// 续柜
+	byte PUSH_MESSAGE_BUS_TYPE_QUIT_LOCKER = ORDER_BUS_TYPE_QUIT_LOCKER;// = 43;// 退柜
+	byte PUSH_MESSAGE_BUS_TYPE_TRAN_LOCKER = ORDER_BUS_TYPE_TRAN_LOCKER;//= 44;// 转柜
+	byte PUSH_MESSAGE_BUS_TYPE_CHANGE_LOCKER = ORDER_BUS_TYPE_CHANGE_LOCKER;// = 45;// 换柜
+
+	byte PUSH_MESSAGE_BUS_TYPE_STORE_ADD = ORDER_BUS_TYPE_STORE_ADD;// 14;// 储值卡充值钱
+	byte PUSH_MESSAGE_BUS_TYPE_STORE_QUIT = ORDER_BUS_TYPE_STORE_QUIT;//15;// 储值卡退钱
+	byte PUSH_MESSAGE_BUS_TYPE_STORE_ADD_APP = ORDER_BUS_TYPE_STORE_ADD_APP;// 16;// app储值卡充值钱
+
+	byte PUSH_MESSAGE_BUS_TYPE_CARD_LOST = ORDER_BUS_TYPE_CARD_LOST;// 29;// 挂失
+	byte PUSH_MESSAGE_BUS_TYPE_CARD_EXTEND = ORDER_BUS_TYPE_CARD_EXTEND;// 28;// 延期
+	byte PUSH_MESSAGE_BUS_TYPE_CARD_PAUSE = ORDER_BUS_TYPE_CARD_PAUSE;//27;// 停卡
+	byte PUSH_MESSAGE_BUS_TYPE_CARD_OPEN = 93;//app 发卡
+	byte PUSH_MESSAGE_BUS_TYPE_CARD_EDIT = 83;//卡编辑
+
+	byte PUSH_MESSAGE_BUS_TYPE_MEMBER_COURSE_APPOINT = 85;//私教预约
+	byte PUSH_MESSAGE_BUS_TYPE_GROUP_COURSE_APPOINT = 86;//团课预约
+	byte PUSH_MESSAGE_BUS_TYPE_GROUP_COURSE_SIGN = 8;//团课签到
+	byte PUSH_MESSAGE_BUS_TYPE_MEMBER_COURSE_SIGN = 7;//私教签到
+	byte PUSH_MESSAGE_BUS_TYPE_FREE_GROUP_COURSE = 87;//免费课
+	byte PUSH_MESSAGE_BUS_TYPE_MEMBER_COURSE_CONFIRM = 88;//私教确认
+
+	byte PUSH_MESSAGE_BUS_TYPE_MEMBER_BCA = 95;//体测
+	byte PUSH_MESSAGE_BUS_TYPE_UNFINISH_WORK = 90;//待办
+	byte PUSH_MESSAGE_BUS_TYPE_COURSE_TYPE_TEACH = 91;//课种选教练
+	byte PUSH_MESSAGE_BUS_TYPE_COURSE_TABLE = 92;//排课预约发生变化
+	byte PUSH_MESSAGE_BUS_TYPE_CARD_EXPIRE = 97;//健身卡快过期时的推送
+	byte PUSH_MESSAGE_BUS_TYPE_JOB_OPEN_CARD = 98;//健身卡开卡当天
+	byte PUSH_MESSAGE_BUS_TYPE_COUNT_CARD_EXPIRE = 99;//次卡完结
+
+	byte TASK_SERVICE_SENSITIVE_DYNMSG = 1;//动态敏感字
+	byte TASK_SERVICE_SENSITIVE_DYNMSG_REPLY = 2;//评论敏感字
+
+}
