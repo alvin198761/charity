@@ -4,6 +4,8 @@ import lombok.*;
 import lombok.experimental.Accessors;
 import org.alvin.cishan.sys.util.base.BaseCondition;
 
+import java.util.List;
+
 /**
  * @类说明:角色查询条件实体类
  * @author:高振中
@@ -25,13 +27,13 @@ public class AdminRoleCond extends BaseCondition {
 		add(id, "AND t.id <> ?");
 		add(name, "AND t.name LIKE ?", 3);
 		add(remark, "AND t.remark LIKE ?", 3);
-		//add(ids, "AND t.id IN ");
+		add(ids, "AND t.id IN ");
 	}
 
 	//查询条件,把不用的条件清理掉
 	private Integer id;// 主键不等于
 	private String name;// 名称
 	private String remark;// 备注
-	//private List<Long> ids;// 主键列表
+	private List<Long> ids;// 主键列表
 
 }

@@ -26,7 +26,7 @@ public class AdminSysUserCond extends BaseCondition {
 	public void addCondition() {
 		add(user_id, "AND t.user_id <> ?");
 		add(user_id_eq, "AND t.user_id=?");
-		add(name, "AND t.name LIKE ?", 3);
+		add(name, "AND t.name = ?");
 		add(password, "AND t.password = ?");
 		add(phone, "AND t.phone LIKE ?", 3);
 		add(phone_eq, "AND t.phone = ?");

@@ -57,6 +57,7 @@ org\alvin\cishan\sys\service\charity\CharityController.class
 org\alvin\cishan\sys\util\ClassUtils$2.class
 org\alvin\cishan\sys\auth\adminsysuser\AdminSysUser.class
 org\alvin\cishan\sys\service\dict\DictService.class
+org\alvin\cishan\Application.class
 org\alvin\cishan\common\exception\ParameterException.class
 org\alvin\cishan\sys\util\HexUtil.class
 org\alvin\cishan\common\acl\AdminUserSessionSubject.class

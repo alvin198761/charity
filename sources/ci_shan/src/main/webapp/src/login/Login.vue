@@ -3,12 +3,14 @@
         <div slot="header">
             慈善管理系统登录
         </div>
-        <el-form :model="form" status-icon :rules="rules" ref="loginForm" label-width="100px">
+        <el-form :model="form" status-icon :rules="rules" ref="loginForm" id="loginForm" label-width="100px"
+                 action="/j_spring_security_check">
             <el-form-item label="用户名" prop="j_username">
-                <el-input v-model="form.j_username" autocomplete="off"></el-input>
+                <el-input v-model="form.j_username" name="j_username" autocomplete="off"></el-input>
             </el-form-item>
             <el-form-item label="密码" prop="j_password">
-                <el-input type="password" v-model="form.j_password" autocomplete="off"></el-input>
+                <el-input type="password" v-model="form.j_password" name="j_password" id="j_password"
+                          autocomplete="off"></el-input>
             </el-form-item>
             <el-form-item>
                 <el-button type="primary" @click="submitForm('loginForm')" style="width: 100%">登录</el-button>
@@ -17,8 +19,7 @@
     </el-card>
 </template>
 <script>
-    import querystring  from 'querystring';
-    import crypto from 'crypto';
+    import axios from 'axios';
     export default{
         data() {
             return {
@@ -43,17 +44,32 @@
                     if (!valid) {
                         return;
                     }
-                    that.$http.post("/j_spring_security_check", {
-                        params: {...that.form ,j_password: $.md5(that.form.j_password)}
-                    }).then(res => {
-                        console.log(res.data);
-                    }).catch(err => {
-                        console.log(err)
+                    $.ajax({
+                        type: "POST",
+                        url: "/api/loginValidate",
+                        dataType: "json",
+                        data: {
+                            j_username: that.form.j_username,
+                            j_password: $.md5(that.form.j_password),
+
+                        },
+                        success: function (data) {
+                            console.log(data)
+                            if (data.success) {
+                                window.location.href = "/";
+                                return;
+                            }
+                            for (let p in data.msgMap) {
+                                that.$message.error(data.msgMap[p]);
+                                break;
+                            }
+                        },
+                        error: function (error) {
+                            that.$message.error(error);
+                        }
                     });
-                });
-            },
-            resetForm(formName) {
-                this.$refs[formName].resetFields();
+
+                })
             }
         }
     }

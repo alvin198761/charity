@@ -34,17 +34,11 @@ module.exports = {
   devServer: {
     proxy: {
       '/api': {
-        target: 'https://localhost:8006',//在线测试
+        target: 'http://localhost:9092',//在线测试
         // ws: true,
         changeOrigin: true,
         secure: false
       },
-      /*            '/api': {
-                      target: 'http://localhost:8000',//在线测试
-                      // ws: true,
-                      changeOrigin: true,
-                      secure: false
-                  },*/
     }
   },
    pages: {

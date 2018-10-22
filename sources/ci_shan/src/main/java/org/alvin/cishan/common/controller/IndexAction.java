@@ -94,7 +94,7 @@ public class IndexAction {
 	 */
 	@PostMapping("/api/loginValidate")
 	@ResponseBody
-	public MessageInfo loginValidate(@RequestParam("username") String username, @RequestParam("password") String password) {
+	public MessageInfo loginValidate(@RequestParam("j_username") String username, @RequestParam("j_password") String password) {
 		MessageInfo messageInfo = new MessageInfo();
 		try {
 			UsernamePasswordAuthenticationToken upToken = new UsernamePasswordAuthenticationToken(username, password);

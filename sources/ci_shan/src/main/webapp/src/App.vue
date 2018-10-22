@@ -34,6 +34,23 @@
     </div>
 </template>
 
+<script>
+    export default {
+        data(){
+            return {
+                timer: null
+            };
+        },
+        created(){
+            this.timer = setInterval(() => that.$http.get("/api/heartbeat"), 2 * 60 * 1000);
+        },
+        destroyed(){
+            clearInterval(this.timer);
+        }
+    }
+</script>
+
+
 <style lang="less">
     html, body, #app {
         width: 100%;
