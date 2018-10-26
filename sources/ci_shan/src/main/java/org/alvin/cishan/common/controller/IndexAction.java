@@ -37,6 +37,11 @@ public class IndexAction {
 		return "index";
 	}
 
+	@GetMapping("/index")
+	public String toIndex() {
+		return "index";
+	}
+
 	@GetMapping("/login")
 	public String login() {
 		return "login";
@@ -47,7 +52,6 @@ public class IndexAction {
 	public Long heartbeat() {
 		return System.currentTimeMillis();
 	}
-
 
 
 	@GetMapping("/api/session")
@@ -87,7 +91,7 @@ public class IndexAction {
 
 	/**
 	 * 登陆验证
-	 * 
+	 *
 	 * @param username
 	 * @param password
 	 * @return
@@ -100,6 +104,7 @@ public class IndexAction {
 			UsernamePasswordAuthenticationToken upToken = new UsernamePasswordAuthenticationToken(username, password);
 			userAuthenticationProvider.authenticate(upToken);
 		} catch (Exception ex) {
+			ex.printStackTrace();
 			messageInfo.setMessage(1, ex.getMessage());
 		}
 		return messageInfo;

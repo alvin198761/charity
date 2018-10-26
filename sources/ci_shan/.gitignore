@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+target
+ci_shan.iml
+logs
+/.classpath
+/.project
+/.settings/
+/.springBeans
+/.idea

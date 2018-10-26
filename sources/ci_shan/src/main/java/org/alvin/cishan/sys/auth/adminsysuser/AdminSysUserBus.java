@@ -84,11 +84,12 @@ public class AdminSysUserBus implements InitializingBean {
 	@Override
 	public void afterPropertiesSet() throws Exception {
 		AdminSysUserCond cond = new AdminSysUserCond();
-		if(this.dao.queryCount(cond) == 0){
+		if (this.dao.queryCount(cond) == 0) {
 			AdminSysUser adminSysUser = new AdminSysUser();
 			adminSysUser.setName("admin");
 			adminSysUser.setPassword(MD5Util.getMD5("admin"));
-			adminSysUser.setGender((byte)1);
+			adminSysUser.setGender((byte) 1);
+			adminSysUser.setStatus((byte) 1);
 			this.save(adminSysUser);
 		}
 	}

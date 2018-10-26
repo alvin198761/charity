@@ -51,7 +51,7 @@ public class UserSecurityService implements UserDetailsService {
 	 */
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		List<AdminSysUser> users = adminSysUserBus.queryList(AdminSysUserCond.builder().name(username).build());
+		List<AdminSysUser> users = adminSysUserBus.queryList(AdminSysUserCond.builder().name(username).status((byte)1).build());
 		if (users.isEmpty()) {
 			throw new UsernameNotFoundException("用户不存在!");
 		}
@@ -68,9 +68,9 @@ public class UserSecurityService implements UserDetailsService {
 		} else {
 			menus = adminRoleFuncBus.queryFunc(user.getUser_id());
 		}
-		if (menus.isEmpty()) {
-			throw new UsernameNotFoundException("您没有登录权限!");
-		}
+//		if (menus.isEmpty()) {
+//			throw new UsernameNotFoundException("您没有登录权限!");
+//		}
 		return new AdminUserSessionSubject(user, menus, Lists.newArrayList(auth));
 	}
 
