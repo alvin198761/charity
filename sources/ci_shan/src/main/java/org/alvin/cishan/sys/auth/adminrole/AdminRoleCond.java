@@ -34,6 +34,6 @@ public class AdminRoleCond extends BaseCondition {
 	private Integer id;// 主键不等于
 	private String name;// 名称
 	private String remark;// 备注
-	private List<Long> ids;// 主键列表
+	private List<Integer> ids;// 主键列表
 
 }

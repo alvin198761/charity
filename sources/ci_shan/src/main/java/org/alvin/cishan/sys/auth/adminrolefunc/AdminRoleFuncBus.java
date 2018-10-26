@@ -1,5 +1,7 @@
 package org.alvin.cishan.sys.auth.adminrolefunc;
 
+import org.alvin.cishan.sys.auth.adminfunc.AdminFunc;
+import org.alvin.cishan.sys.auth.adminfunc.AdminFuncCond;
 import org.alvin.cishan.sys.auth.adminfunc.AdminFuncDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,5 +39,14 @@ public class AdminRoleFuncBus {
 		return dao.insertBatch(list);
 	}
 
+	/**
+	 * @方法说明:某一用户所拥有的相关菜单
+	 **/
+	public List<AdminFunc> queryFunc(Integer user_id) {
+		if (user_id.equals(1)) {
+			return adminFuncDao.queryList(AdminFuncCond.builder().func_id(1).build());
+		}
+		return dao.queryFunc(user_id);
+	}
 
 }

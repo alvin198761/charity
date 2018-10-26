@@ -1,7 +1,11 @@
 package org.alvin.cishan.common.acl;
 
 
+import com.google.common.collect.Lists;
 import org.alvin.cishan.sys.auth.adminfunc.AdminFunc;
+import org.alvin.cishan.sys.auth.adminfunc.AdminFuncBus;
+import org.alvin.cishan.sys.auth.adminfunc.AdminFuncCond;
+import org.alvin.cishan.sys.auth.adminrole.AdminRole;
 import org.alvin.cishan.sys.auth.adminrole.AdminRoleBus;
 import org.alvin.cishan.sys.auth.adminrole.AdminRoleCond;
 import org.alvin.cishan.sys.auth.adminrolefunc.AdminRoleFuncBus;
@@ -33,9 +37,7 @@ public class UserSecurityService implements UserDetailsService {
 	@Autowired
 	private AdminRoleFuncBus adminRoleFuncBus;
 	@Autowired
-	private AdminUserRoleBus adminUserRoleBus;
-	@Autowired
-	private AdminRoleBus adminRoleBus;
+	private AdminFuncBus adminFuncBus;
 
 
 	/**
@@ -59,33 +61,17 @@ public class UserSecurityService implements UserDetailsService {
 			throw new UsernameNotFoundException("用户被禁用!");
 		}
 		SimpleGrantedAuthority auth = new SimpleGrantedAuthority(username.equals("admin") ? RoleType.ADMIN.name() : RoleType.EMPLOYEE.name());
-		List<AdminFunc> menus = adminRoleFuncBus.queryFunc(user_id);
-		//获取用户角色
-		AdminUserRoleCond adminUserRoleCond = new AdminUserRoleCond();
-		adminUserRoleCond.setUser_id(user.getUser_id());
-		List<AdminUserRole> adminUserRoles = this.adminUserRoleBus.queryList(adminUserRoleCond);
-		if (adminUserRoles.isEmpty()) {
+		List<AdminFunc> menus = null;
+		if (username.equals("admin")) {
+			//超级管理员
+			menus = adminFuncBus.queryList(AdminFuncCond.builder().build());
+		} else {
+			menus = adminRoleFuncBus.queryFunc(user.getUser_id());
+		}
+		if (menus.isEmpty()) {
 			throw new UsernameNotFoundException("您没有登录权限!");
 		}
-		AdminRoleCond adminRoleCond = new AdminRoleCond();
-		adminRoleCond.setIds(adminUserRoles.stream().mapToInt(AdminUserRole::getRole_id).collect(Collectors.toList()));
-		List<AdminRole> list = this.adminRoleBus.queryList(adminRoleCond);
-		if (list.isEmpty()) {
-			throw new UsernameNotFoundException("您没有登录权限!");
-		}
-		//获取菜单
-		List<AdminFunc> menus = adminRoleFuncBus.queryFunc(user_id);
-
-//
-//		List<BranchRule> rules = this.branchRuleClient.queryList(BranchRuleCond.builder().user_id(user.getUser_id()).build());
-//		List<Long> bids = rules.stream().map(BranchRule::getBid).collect(Collectors.toList());
-//
-//		BranchCond branchCond = new BranchCond();
-//		branchCond.setIds(bids);
-//		List<Branch> branches = this.branchBus.queryList(branchCond);
-//		return new AdminUserSessionSubject(user, menus, Arrays.asList(auth), branches);
-		return null;
-
+		return new AdminUserSessionSubject(user, menus, Lists.newArrayList(auth));
 	}
 
 }
