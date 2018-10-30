@@ -32,10 +32,7 @@
                     <el-form>
                         <el-row :gutter="10">
                             <el-col :span="6">
-                                <el-form-item label="主键">{{props.row.id}}</el-form-item>
-                            </el-col>
-                            <el-col :span="6">
-                                <el-form-item label="类型">{{props.row.type}}</el-form-item>
+                                <el-form-item label="类型">{{props.row.type | event_type_filter}}</el-form-item>
                             </el-col>
                             <el-col :span="6">
                                 <el-form-item label="名称">{{props.row.name}}</el-form-item>
@@ -47,7 +44,7 @@
                                 <el-form-item label="目标机构/电话">{{props.row.target_id}}</el-form-item>
                             </el-col>
                             <el-col :span="6">
-                                <el-form-item label="活动时间">{{props.row.event_time}}</el-form-item>
+                                <el-form-item label="活动时间">{{props.row.event_time |date_filter}}</el-form-item>
                             </el-col>
                             <el-col :span="6">
                                 <el-form-item label="备注">{{props.row.remark}}</el-form-item>
@@ -59,19 +56,28 @@
                     </el-form>
                 </template>
             </el-table-column>
-            <el-table-column prop="id" label="编号"></el-table-column>
-            <el-table-column prop="type" label="类型"></el-table-column>
+            <el-table-column prop="id" label="编号" width="60"></el-table-column>
+            <el-table-column prop="type" label="类型"  width="60">
+                <template scope="props">
+                    <span>{{props.row.type | event_type_filter}}</span>
+                </template>
+            </el-table-column>
             <el-table-column prop="name" label="名称"></el-table-column>
-            <el-table-column prop="author" label="创建人"></el-table-column>
-            <el-table-column prop="remark" label="备注"></el-table-column>
-            <el-table-column prop="status" label="状态"></el-table-column>
-            <el-table-column prop="create_time" label="创建时间"></el-table-column>
-            <el-table-column label="操作" width="150">
+
+            <el-table-column prop="remark" label="备注" show-overflow-tooltip></el-table-column>
+            <el-table-column prop="status" label="状态"  width="60"></el-table-column>
+            <el-table-column prop="author" label="创建人"  width="100"></el-table-column>
+            <el-table-column label="创建时间"  width="160">
+                <template scope="props">
+                    <span>{{props.row.create_time | date_filter}}</span>
+                </template>
+            </el-table-column>
+            <el-table-column label="操作" width="200">
                 <template slot-scope="props">
                     <div>
                         <el-button type="text" @click="doShowJoin(props.row)">参与人列表</el-button>
                         <el-button type="text" @click="doEdit(props.row)">编辑</el-button>
-                        <el-button type="text" @click="doDelete(props.row)">删除</el-button>
+                        <!--<el-button type="text" @click="doDelete(props.row)">删除</el-button>-->
                     </div>
                 </template>
             </el-table-column>

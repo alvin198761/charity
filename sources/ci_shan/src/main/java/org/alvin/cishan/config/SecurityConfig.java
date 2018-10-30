@@ -40,6 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 //放过的url
                 .antMatchers("/login", "/j_spring_security_check").permitAll() //登陆
+                .antMatchers("/fonts/**").permitAll() //登陆
                 .antMatchers("/api/loginValidate").permitAll() //登陆验证
                 .antMatchers("/code", "/check").permitAll()
                 .antMatchers("/resources/**").permitAll()

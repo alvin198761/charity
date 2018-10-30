@@ -43,7 +43,7 @@ public class CharityEvent {
 	@ApiModelProperty(value = "target_id", dataType = "Long")
 	private Long target_id;//  target_id
 
-//	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+	//	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	@ApiModelProperty(value = "event_time", dataType = "Date")
 	private Date event_time;//  event_time
 
@@ -62,10 +62,13 @@ public class CharityEvent {
 	@ApiModelProperty(value = "status", dataType = "Byte")
 	private Byte status;//  status
 
-//	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+	//	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	@ApiModelProperty(value = "create_time", dataType = "Date")
 	private Date create_time;//  create_time
 
 	//此处可添加查询显示辅助字段
+
+	private String chiarmain_name;
+	private String target_name ;
 
 }
