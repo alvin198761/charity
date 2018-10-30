@@ -1118,3 +1118,412 @@ org.springframework.web.bind.MissingServletRequestParameterException: Required S
 2018-10-26 13:46:07,900[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
 2018-10-26 13:46:43,943[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
 2018-10-26 13:47:36,704[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 09:24:43,189[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 17796 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 09:24:43,208[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 09:24:46,454[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:24:46,482[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 09:24:46,482[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 09:24:46,499[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 09:24:46,639[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 09:24:47,144[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 09:24:47,155[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 09:24:47,464[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 09:24:49,758[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:24:49,772[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 09:24:49,799[StartupInfoLogger.java:59][INFO]:Started Application in 7.416 seconds (JVM running for 26.723)
+2018-10-30 09:25:35,061[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 09:25:41,542[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 09:26:07,779[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 09:27:51,380[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 16196 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 09:27:51,384[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 09:27:53,890[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:27:53,905[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 09:27:53,905[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 09:27:53,920[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 09:27:54,019[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 09:27:54,645[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 09:27:54,655[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 09:27:54,887[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 09:28:00,473[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:28:00,488[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 09:28:00,516[StartupInfoLogger.java:59][INFO]:Started Application in 9.721 seconds (JVM running for 20.824)
+2018-10-30 09:29:01,541[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 09:29:09,374[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 09:29:23,321[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 7884 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 09:29:23,326[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 09:29:26,110[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:29:26,122[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 09:29:26,122[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 09:29:26,133[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 09:29:26,236[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 09:29:26,622[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 09:29:26,634[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 09:29:27,184[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 09:29:41,128[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 11588 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 09:29:41,133[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 09:29:44,076[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:29:44,089[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 09:29:44,090[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 09:29:44,103[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 09:29:44,203[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 09:29:44,585[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 09:29:44,596[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 09:29:44,828[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 09:29:46,733[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:29:46,747[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 09:29:46,771[StartupInfoLogger.java:59][INFO]:Started Application in 6.975 seconds (JVM running for 17.372)
+2018-10-30 09:30:51,122[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 09:31:02,618[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 09:34:57,181[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 18228 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 09:34:57,191[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 09:34:59,679[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:34:59,693[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 09:34:59,694[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 09:34:59,709[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 09:34:59,821[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 09:35:00,224[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 09:35:00,236[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 09:35:00,472[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 09:35:02,329[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:35:02,342[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 09:35:02,369[StartupInfoLogger.java:59][INFO]:Started Application in 5.851 seconds (JVM running for 15.663)
+2018-10-30 09:35:13,295[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 09:35:16,842[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 09:41:13,194[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 7740 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 09:41:13,198[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 09:41:15,585[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:41:15,599[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 09:41:15,599[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 09:41:15,611[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 09:41:15,712[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 09:41:16,133[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 09:41:16,145[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 09:41:16,569[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 09:41:18,397[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:41:18,410[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 09:41:18,432[StartupInfoLogger.java:59][INFO]:Started Application in 5.763 seconds (JVM running for 9.527)
+2018-10-30 09:41:52,945[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 6036 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 09:41:52,949[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 09:41:55,488[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:41:55,502[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 09:41:55,502[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 09:41:55,515[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 09:41:55,611[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 09:41:55,993[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 09:41:56,004[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 09:41:56,236[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 09:41:58,110[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:41:58,124[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 09:41:58,148[StartupInfoLogger.java:59][INFO]:Started Application in 5.816 seconds (JVM running for 15.92)
+2018-10-30 09:42:20,133[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 09:42:29,458[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 09:46:26,507[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 15200 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 09:46:26,512[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 09:46:28,774[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:46:28,786[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 09:46:28,787[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 09:46:28,800[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 09:46:28,918[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 09:46:29,314[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 09:46:29,325[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 09:46:29,774[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 09:46:31,549[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:46:31,561[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 09:46:31,586[StartupInfoLogger.java:59][INFO]:Started Application in 5.552 seconds (JVM running for 9.522)
+2018-10-30 09:46:47,797[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 09:46:54,141[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 09:47:38,551[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 09:51:09,879[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 10788 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 09:51:09,882[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 09:51:11,918[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:51:11,936[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 09:51:11,936[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 09:51:11,954[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 09:51:12,049[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 09:51:12,342[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 09:51:12,350[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 09:51:12,558[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 09:51:14,169[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:51:14,179[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 09:51:14,196[StartupInfoLogger.java:59][INFO]:Started Application in 4.638 seconds (JVM running for 7.96)
+2018-10-30 09:51:54,961[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 09:52:02,796[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 09:54:49,368[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 18040 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 09:54:49,372[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 09:54:51,473[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:54:51,483[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 09:54:51,484[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 09:54:51,493[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 09:54:51,578[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 09:54:51,938[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 09:54:51,947[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 09:54:52,144[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 09:54:53,777[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 09:54:53,787[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 09:54:53,804[StartupInfoLogger.java:59][INFO]:Started Application in 4.82 seconds (JVM running for 12.668)
+2018-10-30 09:55:12,744[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 09:56:37,577[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 10:05:00,632[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 12880 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 10:05:00,635[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 10:05:02,716[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 10:05:02,728[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 10:05:02,728[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 10:05:02,740[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 10:05:02,826[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 10:05:03,137[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 10:05:03,144[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 10:05:03,344[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 10:05:04,929[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 10:05:04,939[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 10:05:04,959[StartupInfoLogger.java:59][INFO]:Started Application in 4.688 seconds (JVM running for 8.439)
+2018-10-30 10:05:21,825[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 10:05:29,526[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 10:07:12,301[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 16344 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 10:07:12,304[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 10:07:14,728[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 10:07:14,739[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 10:07:14,739[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 10:07:14,749[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 10:07:14,864[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 10:07:15,210[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 10:07:15,217[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 10:07:15,408[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 10:07:17,040[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 10:07:17,060[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 10:07:17,082[StartupInfoLogger.java:59][INFO]:Started Application in 5.311 seconds (JVM running for 10.883)
+2018-10-30 10:07:38,977[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 10:07:47,395[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 10:07:47,475[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 10:22:10,530[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 3508 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 10:22:10,533[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 10:22:12,906[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 10:22:12,918[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 10:22:12,918[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 10:22:12,929[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 10:22:13,016[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 10:22:13,332[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 10:22:13,341[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 10:22:13,545[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 10:22:15,380[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 10:22:15,391[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 10:22:15,412[StartupInfoLogger.java:59][INFO]:Started Application in 5.437 seconds (JVM running for 9.961)
+2018-10-30 10:22:35,494[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 10:22:35,615[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 10:22:35,721[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 10:22:52,294[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 10292 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 10:22:52,298[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 10:22:54,336[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 10:22:54,346[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 10:22:54,346[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 10:22:54,356[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 10:22:54,434[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 10:22:54,729[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 10:22:54,736[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 10:22:54,945[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 10:22:56,648[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 10:22:56,661[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 10:22:56,682[StartupInfoLogger.java:59][INFO]:Started Application in 4.797 seconds (JVM running for 8.686)
+2018-10-30 10:23:14,738[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 10:23:33,373[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 10:23:33,464[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 10:23:35,863[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 10:23:35,872[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:13:47,705[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 10984 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 11:13:47,707[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 11:13:50,051[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 11:13:50,062[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 11:13:50,063[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 11:13:50,077[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 11:13:50,157[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 11:13:50,488[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 11:13:50,494[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 11:13:50,704[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 11:13:52,254[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 11:13:52,265[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 11:13:52,284[StartupInfoLogger.java:59][INFO]:Started Application in 5.195 seconds (JVM running for 13.21)
+2018-10-30 11:14:01,909[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 11:14:23,858[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:14:23,937[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:14:25,541[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:14:25,556[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:14:45,787[DefaultExceptionHandler.java:29][ERROR]:JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2018-10-15T16:00:00.000Z": expected format "yyyy-MM-dd HH:mm:ss"; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2018-10-15T16:00:00.000Z": expected format "yyyy-MM-dd HH:mm:ss"
+ at [Source: (PushbackInputStream); line: 1, column: 98] (through reference chain: org.alvin.cishan.sys.service.charityevent.CharityEvent["event_time"])
+org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2018-10-15T16:00:00.000Z": expected format "yyyy-MM-dd HH:mm:ss"; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2018-10-15T16:00:00.000Z": expected format "yyyy-MM-dd HH:mm:ss"
+ at [Source: (PushbackInputStream); line: 1, column: 98] (through reference chain: org.alvin.cishan.sys.service.charityevent.CharityEvent["event_time"])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:243)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:225)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:206)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:157)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:130)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2018-10-15T16:00:00.000Z": expected format "yyyy-MM-dd HH:mm:ss"
+ at [Source: (PushbackInputStream); line: 1, column: 98] (through reference chain: org.alvin.cishan.sys.service.charityevent.CharityEvent["event_time"])
+	at com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:1549)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:911)
+	at com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateBasedDeserializer._parseDate(DateDeserializers.java:189)
+	at com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateDeserializer.deserialize(DateDeserializers.java:285)
+	at com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateDeserializer.deserialize(DateDeserializers.java:268)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:127)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:369)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:159)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3084)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:237)
+	... 92 common frames omitted
+2018-10-30 11:15:54,227[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 4284 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 11:15:54,230[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 11:15:56,484[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 11:15:56,496[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 11:15:56,496[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 11:15:56,507[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 11:15:56,586[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 11:15:56,897[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 11:15:56,905[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 11:15:57,111[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 11:15:58,501[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 11:15:58,511[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 11:15:58,527[StartupInfoLogger.java:59][INFO]:Started Application in 4.816 seconds (JVM running for 12.676)
+2018-10-30 11:16:29,868[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 11:19:24,529[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 16300 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 11:19:24,532[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 11:19:26,569[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 11:19:26,580[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 11:19:26,581[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 11:19:26,592[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 11:19:26,676[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 11:19:26,978[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 11:19:26,989[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 11:19:27,190[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 11:19:28,820[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 11:19:28,831[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 11:19:28,849[StartupInfoLogger.java:59][INFO]:Started Application in 4.669 seconds (JVM running for 8.202)
+2018-10-30 11:19:42,686[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 11:19:50,710[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:19:50,796[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:19:52,908[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:19:52,920[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:25:06,978[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:25:06,988[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:31:53,411[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 18428 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 11:31:53,415[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 11:31:55,411[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 11:31:55,423[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 11:31:55,423[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 11:31:55,435[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 11:31:55,515[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 11:31:55,807[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 11:31:55,815[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 11:31:56,014[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 11:31:57,617[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 11:31:57,626[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 11:31:57,643[StartupInfoLogger.java:59][INFO]:Started Application in 4.577 seconds (JVM running for 7.892)
+2018-10-30 11:32:44,017[StartupInfoLogger.java:50][INFO]:Starting Application on DESKTOP-PS54HOV with PID 9260 (F:\github_dir\charity\sources\ci_shan\target\classes started by alvin in F:\github_dir\charity\sources\ci_shan)
+2018-10-30 11:32:44,020[SpringApplication.java:658][INFO]:The following profiles are active: dev
+2018-10-30 11:32:46,104[DirectJDKLog.java:180][INFO]:Initializing ProtocolHandler ["http-nio-9092"]
+2018-10-30 11:32:46,115[DirectJDKLog.java:180][INFO]:Starting service [Tomcat]
+2018-10-30 11:32:46,116[DirectJDKLog.java:180][INFO]:Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-30 11:32:46,128[DirectJDKLog.java:180][INFO]:The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\softs\JAVA_HOME\jdk\jdk8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\nodejs\;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseGit\bin;;C:\WINDOWS\System32\OpenSSH\;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\jdk\jdk8\bin;D:\softs\JAVA_HOME\jdk\jdk8\jre\bin;D:\softs\JAVA_HOME\apache-maven-3.5.0\bin;C:\Users\动岚未来科技02\AppData\Roaming\npm;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\动岚未来科技02\AppData\Local\GitHubDesktop\bin;C:\Users\动岚未来科技02\AppData\Local\Microsoft\WindowsApps;D:\softs\JAVA_HOME\gradle-4.7\bin;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\tools;D:\softs\JAVA_HOME\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;D:\Program Files\Git;;.]
+2018-10-30 11:32:46,216[DirectJDKLog.java:180][INFO]:Initializing Spring embedded WebApplicationContext
+2018-10-30 11:32:46,519[AdminSysUserDao.java:95][INFO]:SELECT COUNT(1) FROM admin_sys_user t WHERE 1=1
+2018-10-30 11:32:46,527[HikariDataSource.java:110][INFO]:HikariPool-1 - Starting...
+2018-10-30 11:32:46,743[HikariDataSource.java:123][INFO]:HikariPool-1 - Start completed.
+2018-10-30 11:32:48,437[DirectJDKLog.java:180][INFO]:Starting ProtocolHandler ["http-nio-9092"]
+2018-10-30 11:32:48,449[DirectJDKLog.java:180][INFO]:Using a shared selector for servlet write/read
+2018-10-30 11:32:48,466[StartupInfoLogger.java:59][INFO]:Started Application in 4.79 seconds (JVM running for 7.886)
+2018-10-30 11:33:07,255[DirectJDKLog.java:180][INFO]:Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-30 11:44:34,630[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:44:34,716[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:44:42,480[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:44:42,491[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:58:42,378[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:58:42,445[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:59:45,421[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id
+2018-10-30 11:59:45,429[AdminFuncDao.java:74][INFO]:SELECT t.func_id,t.type,t.color,t.icon,t.name,t.parent_id,t.tip,t.remark,t.status,t.url,t.order_num,p.name parent_name FROM admin_func t LEFT JOIN admin_func p on t.parent_id=p.func_id  WHERE 1=1 ORDER BY func_id

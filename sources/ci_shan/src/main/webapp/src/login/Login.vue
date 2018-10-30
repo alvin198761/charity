@@ -3,8 +3,8 @@
         <div slot="header">
             慈善管理系统登录
         </div>
-        <el-form :model="form" status-icon :rules="rules" ref="loginForm" id="loginForm" label-width="100px"
-                 action="/j_spring_security_check">
+        <el-form action="/j_spring_security_check" method="post" :model="form" status-icon :rules="rules"
+                 ref="loginForm" id="loginForm" label-width="100px">
             <el-form-item label="用户名" prop="j_username">
                 <el-input v-model="form.j_username" name="j_username" autocomplete="off"></el-input>
             </el-form-item>
@@ -54,9 +54,9 @@
 
                         },
                         success: function (data) {
-                            console.log(data)
                             if (data.success) {
-                                window.location.href = "/";
+                                document.getElementById("j_password").value = $.md5(document.getElementById("j_password").value);
+                                document.getElementById("loginForm").submit();
                                 return;
                             }
                             for (let p in data.msgMap) {

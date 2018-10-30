@@ -39,12 +39,6 @@ module.exports = {
         changeOrigin: true,
         secure: false
       },
-      /*            '/api': {
-                      target: 'http://localhost:8000',//在线测试
-                      // ws: true,
-                      changeOrigin: true,
-                      secure: false
-                  },*/
     }
   },
    pages: {

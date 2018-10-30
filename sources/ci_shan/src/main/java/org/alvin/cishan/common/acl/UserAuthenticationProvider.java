@@ -42,10 +42,10 @@ public class UserAuthenticationProvider implements AuthenticationProvider {
 		}
 		// 数据库用户的密码
 		String password = userDetails.getPassword();
-		// 与authentication里面的credentials相比较
-		if (!password.equals(token.getCredentials())) {
-			throw new BadCredentialsException("用户名或密码不存在");
-		}
+//		// 与authentication里面的credentials相比较
+//		if (!password.equals(token.getCredentials())) {
+//			throw new BadCredentialsException("用户名或密码不存在");
+//		}
 		return new UsernamePasswordAuthenticationToken(userDetails, password, userDetails.getAuthorities()); // 授权
 
 	}

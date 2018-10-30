@@ -3,7 +3,7 @@
         <el-container>
             <el-header style="text-align: center">
                 <el-row>
-                    <el-col :span="2">系统图标</el-col>
+                    <el-col :span="2"><a href="#/">系统图标</a></el-col>
                     <el-col :span="20">
                         <el-menu default-active="/event" mode="horizontal" router
                                  background-color="#545c64"
@@ -21,7 +21,7 @@
                         </el-menu>
                     </el-col>
                     <el-col :span="2">
-                        退出登录
+                        <a href="/j_spring_security_logout">退出登录</a>
                     </el-col>
                 </el-row>
 
@@ -42,6 +42,7 @@
             };
         },
         created(){
+            const that = this;
             this.timer = setInterval(() => that.$http.get("/api/heartbeat"), 2 * 60 * 1000);
         },
         destroyed(){
@@ -58,30 +59,31 @@
         margin: 0px;
     }
 
-    .el-header, .el-footer {
+    .el-header, .el-footer ,  .el-header a, .el-footer a {
         background-color: #545c64;
         color: #fff;
         text-align: center;
         line-height: 60px;
+        text-decoration: none;
     }
 
-    .el-aside {
-        /*background-color: #D3DCE6;*/
-        color: #333;
-        text-align: center;
-        line-height: 200px;
-    }
+    /*.el-aside {*/
+        /*!*background-color: #D3DCE6;*!*/
+        /*color: #333;*/
+        /*text-align: center;*/
+        /*line-height: 200px;*/
+    /*}*/
 
-    .el-main {
+    /*.el-main {*/
         /*background-color: #E9EEF3;*/
-        color: #333;
-        text-align: center;
-        line-height: 160px;
-    }
+        /*color: #333;*/
+        /*text-align: center;*/
+        /*line-height: 160px;*/
+    /*}*/
 
-    body > .el-container {
-        margin-bottom: 40px;
-    }
+    /*body > .el-container {*/
+        /*margin-bottom: 40px;*/
+    /*}*/
 
     .el-container:nth-child(5) .el-aside,
     .el-container:nth-child(6) .el-aside {
