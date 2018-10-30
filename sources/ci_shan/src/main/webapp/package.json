@@ -5,7 +5,7 @@
   "scripts": {
     "changeToDev": "node ./shell/changeConfig.js dev",
     "changeToProd": "node ./shell/changeConfig.js prod",
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open",
     "buildVueCli": "vue-cli-service build",
     "mock": "puer --no-launch -r proxy.config.js",
     "copyResToDist": "node ./shell/CopyResourceToDist.js",

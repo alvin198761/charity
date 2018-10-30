@@ -257,3 +257,10 @@ CREATE TABLE `event_user` (
 -- ----------------------------
 -- Records of event_user
 -- ----------------------------
+DROP TABLE IF EXISTS `type_dict`;
+CREATE TABLE `type_dict` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `type` int(11) DEFAULT NULL,
+  `name` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='类型字典';

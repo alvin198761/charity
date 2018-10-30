@@ -3,7 +3,7 @@
         <el-container>
             <el-header style="text-align: center">
                 <el-row>
-                    <el-col :span="2"><a href="#/">系统图标</a></el-col>
+                    <el-col :span="2"><a href="/#/">系统图标</a></el-col>
                     <el-col :span="20">
                         <el-menu default-active="/event" mode="horizontal" router
                                  background-color="#545c64"
@@ -12,11 +12,19 @@
                             <el-menu-item index="/event">活动记录</el-menu-item>
                             <el-menu-item index="/categorylist">物资管理</el-menu-item>
                             <el-menu-item index="/charitylist">行善方管理</el-menu-item>
-                            <el-menu-item index="/dictlist">类型管理</el-menu-item>
-                            <el-menu-item index="/adminDept">部门管理</el-menu-item>
-                            <el-menu-item index="/adminMenu">菜单管理</el-menu-item>
-                            <el-menu-item index="/adminRole">角色管理</el-menu-item>
-                            <el-menu-item index="/adminSysUser">用户管理</el-menu-item>
+                            <el-menu-item index="/difflist">受善方管理</el-menu-item>
+                            <el-submenu index="fields">
+                                <template slot="title">字段设置</template>
+                                <el-menu-item index="/settings/event_type">活动类型</el-menu-item>
+                                <el-menu-item index="/settings/res_type">物资类型</el-menu-item>
+                            </el-submenu>
+                            <el-submenu index="permission">
+                                <template slot="title">系统权限</template>
+                                <el-menu-item index="/settings/adminDept">部门管理</el-menu-item>
+                                <el-menu-item index="/settings/adminMenu">菜单管理</el-menu-item>
+                                <el-menu-item index="/settings/adminRole">角色管理</el-menu-item>
+                                <el-menu-item index="/settings/adminSysUser">用户管理</el-menu-item>
+                            </el-submenu>
                             <el-menu-item index="/center">个人中心</el-menu-item>
                         </el-menu>
                     </el-col>
@@ -59,7 +67,7 @@
         margin: 0px;
     }
 
-    .el-header, .el-footer ,  .el-header a, .el-footer a {
+    .el-header, .el-footer, .el-header a, .el-footer a {
         background-color: #545c64;
         color: #fff;
         text-align: center;
@@ -68,21 +76,21 @@
     }
 
     /*.el-aside {*/
-        /*!*background-color: #D3DCE6;*!*/
-        /*color: #333;*/
-        /*text-align: center;*/
-        /*line-height: 200px;*/
+    /*!*background-color: #D3DCE6;*!*/
+    /*color: #333;*/
+    /*text-align: center;*/
+    /*line-height: 200px;*/
     /*}*/
 
     /*.el-main {*/
-        /*background-color: #E9EEF3;*/
-        /*color: #333;*/
-        /*text-align: center;*/
-        /*line-height: 160px;*/
+    /*background-color: #E9EEF3;*/
+    /*color: #333;*/
+    /*text-align: center;*/
+    /*line-height: 160px;*/
     /*}*/
 
     /*body > .el-container {*/
-        /*margin-bottom: 40px;*/
+    /*margin-bottom: 40px;*/
     /*}*/
 
     .el-container:nth-child(5) .el-aside,
