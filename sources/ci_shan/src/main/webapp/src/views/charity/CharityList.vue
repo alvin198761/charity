@@ -3,7 +3,15 @@
     <div>
         <el-form :inline="true">
             <el-form-item label="类型">
-                <el-input placeholder="行善方类型" size="small" v-model="form.type"></el-input>
+                <el-select size="small" v-model="form.type" placeholder="行善方类型"  style="width: 100%">
+                    <el-option label="全部" :value="-1"></el-option>
+                    <el-option
+                            v-for="item in typeList"
+                            :key="item.id"
+                            :label="item.name"
+                            :value="item.id">
+                    </el-option>
+                </el-select>
             </el-form-item>
             <el-form-item label="姓名">
                 <el-input placeholder="姓名" size="small" v-model="form.charity_name"></el-input>
@@ -22,25 +30,19 @@
                     <el-form>
                         <el-row :gutter="10">
                             <el-col :span="6">
-                                <el-form-item label="address">{{props.row.address}}</el-form-item>
+                                <el-form-item label="地址">{{props.row.address}}</el-form-item>
                             </el-col>
                             <el-col :span="6">
-                                <el-form-item label="create_date">{{props.row.create_date}}</el-form-item>
+                                <el-form-item label="创建时间">{{props.row.create_date}}</el-form-item>
                             </el-col>
                             <el-col :span="6">
-                                <el-form-item label="author">{{props.row.author}}</el-form-item>
+                                <el-form-item label="创建人">{{props.row.author}}</el-form-item>
                             </el-col>
                             <el-col :span="6">
-                                <el-form-item label="remark">{{props.row.remark}}</el-form-item>
+                                <el-form-item label="备注">{{props.row.remark}}</el-form-item>
                             </el-col>
                             <el-col :span="6">
-                                <el-form-item label="p_id">{{props.row.p_id}}</el-form-item>
-                            </el-col>
-                            <el-col :span="6">
-                                <el-form-item label="category">{{props.row.category}}</el-form-item>
-                            </el-col>
-                            <el-col :span="6">
-                                <el-form-item label="status">{{props.row.status}}</el-form-item>
+                                <el-form-item label="状态">{{props.row.status}}</el-form-item>
                             </el-col>
                         </el-row>
                     </el-form>
@@ -51,8 +53,6 @@
             <el-table-column prop="charity_name" label="姓名"></el-table-column>
             <el-table-column prop="phone_no" label="手机号"></el-table-column>
             <el-table-column prop="gender" label="性别"></el-table-column>
-            <el-table-column prop="address" label="地址"></el-table-column>
-            <el-table-column prop="p_id" label="所有机构"></el-table-column>
             <el-table-column prop="status" label="状态"></el-table-column>
             <el-table-column label="操作" width="150">
                 <template slot-scope="props">
@@ -70,7 +70,7 @@
                            :page-sizes="[10, 15, 20, 100]" @size-change="(s) => {this.size = s ; this.refresh();}"
                            :page-size="size"></el-pagination>
         </div>
-        <CharityDialog ref="dialog" :refresh="refresh"></CharityDialog>
+        <CharityDialog ref="dialog" :refresh="refresh" :type="3" titleName="行善方" :category="1"></CharityDialog>
     </div>
 </template>
 <script>
@@ -94,21 +94,36 @@
                     author: null,// author
                     remark: null,// remark
                     p_id: null,// p_id
-                    category: null,// category
+                    category: 1,// category
                     status: null,// status
                 },
+                typeList: [],
                 loading: false
             }
         },
         computed: {},
         created: function () {
             this.refresh();
+            this.loadTypes(3);
         },
         methods: {
+            loadTypes(type){
+              const that = this;
+              that.$http.post("/api/dict/queryList",JSON.stringify({
+                  type: type
+              })).then(res => {
+                  that.typeList = res.data;
+              }).catch(re => {
+                  that.$message.error("获取慈善方类型：" + res);
+              });
+            },
             refresh() {
                 const that = this;
                 that.loading = true;
                 const requestData = {...that.form, page: that.page - 1, size: that.size};
+                if(requestData.type == -1){
+                    requestData.type = null;
+                }
                 that.$http.post("/api/charity/queryPage", JSON.stringify(requestData)).then(res => {
                     that.loading = false;
                     that.dataList = res.data.content;

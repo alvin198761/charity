@@ -1,11 +1,14 @@
 package org.alvin.cishan.sys.service.charity;
 
+import org.alvin.cishan.common.controller.PrincipalAction;
 import org.alvin.cishan.sys.util.Page;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -15,7 +18,7 @@ import java.util.List;
 **/
 @RestController
 @RequestMapping("api/charity")
-public class CharityController {
+public class CharityController extends PrincipalAction {
 
 	@SuppressWarnings("unused")
 	private final Log logger = LogFactory.getLog(getClass());
@@ -26,7 +29,10 @@ public class CharityController {
     * @方法说明：  新增[慈善方]记录
     */
 	@PostMapping("save")
-	public int save(@RequestBody Charity charity) {
+	public int save(@RequestBody Charity charity , Principal principal) {
+		charity.setStatus((byte)0);
+		charity.setCreate_date(new Date());
+		charity.setAuthor(getUser(principal).getUser_id().longValue());
 		return service.save(charity);
 	}
 

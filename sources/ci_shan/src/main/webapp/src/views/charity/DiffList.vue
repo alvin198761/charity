@@ -3,7 +3,15 @@
     <div>
         <el-form :inline="true">
             <el-form-item label="类型">
-                <el-input placeholder="行善方类型" size="small" v-model="form.type"></el-input>
+                <el-select size="small" v-model="form.type" placeholder="受善方类型"  style="width: 100%">
+                    <el-option label="全部" :value="-1"></el-option>
+                    <el-option
+                            v-for="item in typeList"
+                            :key="item.id"
+                            :label="item.name"
+                            :value="item.id">
+                    </el-option>
+                </el-select>
             </el-form-item>
             <el-form-item label="姓名">
                 <el-input placeholder="姓名" size="small" v-model="form.charity_name"></el-input>
@@ -70,7 +78,7 @@
                            :page-sizes="[10, 15, 20, 100]" @size-change="(s) => {this.size = s ; this.refresh();}"
                            :page-size="size"></el-pagination>
         </div>
-        <CharityDialog ref="dialog" :refresh="refresh"></CharityDialog>
+        <CharityDialog ref="dialog" :refresh="refresh"  :type="4" titleName="受善方"  :category="2"></CharityDialog>
     </div>
 </template>
 <script>
@@ -94,17 +102,29 @@
                     author: null,// author
                     remark: null,// remark
                     p_id: null,// p_id
-                    category: null,// category
+                    category: 2,// category
                     status: null,// status
                 },
+                typeList: [],
                 loading: false
             }
         },
         computed: {},
         created: function () {
             this.refresh();
+            this.loadTypes(4);
         },
         methods: {
+            loadTypes(type){
+                const that = this;
+                that.$http.post("/api/dict/queryList",JSON.stringify({
+                    type: type
+                })).then(res => {
+                    that.typeList = res.data;
+                }).catch(re => {
+                    that.$message.error("获取受善方类型：" + res);
+                });
+            },
             refresh() {
                 const that = this;
                 that.loading = true;
@@ -114,7 +134,7 @@
                     that.dataList = res.data.content;
                     that.total = res.data.totalElements;
                 }).catch(res => {
-                    that.$message.error("获取慈善方列表失败：" + res);
+                    that.$message.error("获取受善方列表失败：" + res);
                     that.loading = false;
                 });
             },

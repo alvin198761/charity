@@ -12,6 +12,8 @@ import CategoryList from './views/category/CategoryList.vue';
 import CharityList from './views/charity/CharityList.vue';
 import DiffList from './views/charity/DiffList.vue';
 import EventTypeList from './views/dict/EventTypeList.vue';
+import CharityTypeList from './views/dict/CharityTypeList.vue';
+import DiffTypeList from './views/dict/DiffTypeList.vue';
 import ResTypeList from './views/dict/ResTypeList.vue';
 
 Vue.use(Router)
@@ -34,7 +36,9 @@ export default new Router({
                         {path: 'adminMenu', component: AdminFunc, name: '菜单管理',},
 
                         {path: 'event_type', component: EventTypeList, name: '活动类型',},
-                        {path: 'res_type', component: ResTypeList, name: '资源类型',}
+                        {path: 'res_type', component: ResTypeList, name: '资源类型',},
+                        {path: 'charity_type', component: CharityTypeList, name: '行善方类型',},
+                        {path: 'diff_type', component: DiffTypeList, name: '受善方类型',},
                     ]
                 },
                 //

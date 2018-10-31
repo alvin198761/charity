@@ -17,6 +17,8 @@
                                 <template slot="title">字段设置</template>
                                 <el-menu-item index="/settings/event_type">活动类型</el-menu-item>
                                 <el-menu-item index="/settings/res_type">物资类型</el-menu-item>
+                                <el-menu-item index="/settings/charity_type">行善方类型</el-menu-item>
+                                <el-menu-item index="/settings/diff_type">受善方类型</el-menu-item>
                             </el-submenu>
                             <el-submenu index="permission">
                                 <template slot="title">系统权限</template>

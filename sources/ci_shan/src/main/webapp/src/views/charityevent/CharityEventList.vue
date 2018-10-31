@@ -3,18 +3,13 @@
     <div>
         <el-form :inline="true" label-width="60px">
             <el-form-item label="类型">
-                <el-select size="small" v-model='form.type' placeholder="活动类型" style="width: 100%">
+                <el-select size="small" v-model="form.type" placeholder="类型"  style="width: 100%">
+                    <el-option label="全部" :value="-1"></el-option>
                     <el-option
-                            label="全部"
-                            :value="-1">
-                    </el-option>
-                    <el-option
-                            label="捐款"
-                            :value="1">
-                    </el-option>
-                    <el-option
-                            label="物资"
-                            :value="2">
+                            v-for="item in typeList"
+                            :key="item.id"
+                            :label="item.name"
+                            :value="item.id">
                     </el-option>
                 </el-select>
             </el-form-item>
@@ -117,14 +112,26 @@
                     status: null,// status
                     create_time: null,// create_time
                 },
+                typeList: [],
                 loading: false
             }
         },
         computed: {},
         created: function () {
             this.refresh();
+            this.loadTypes(1);
         },
         methods: {
+            loadTypes(type){
+                const that = this;
+                that.$http.post("/api/dict/queryList",JSON.stringify({
+                    type: type
+                })).then(res => {
+                    that.typeList = res.data;
+                }).catch(re => {
+                    that.$message.error("获取类型：" + res);
+                });
+            },
             refresh() {
                 const that = this;
                 that.loading = true;
