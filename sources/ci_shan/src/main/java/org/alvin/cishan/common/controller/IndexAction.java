@@ -44,8 +44,12 @@ public class IndexAction {
 
 	@GetMapping("/login")
 	public String login() {
-		return "login";
+		return "login_2";
 	}
+//	@GetMapping("/login")
+//	public String login() {
+//		return "login";
+//	}
 
 	@GetMapping("/api/heartbeat")
 	@ResponseBody
