@@ -3,7 +3,7 @@
     <div>
         <el-form :inline="true" label-width="60px">
             <el-form-item label="类型">
-                <el-select size="small" v-model="form.type" placeholder="类型"  style="width: 100%">
+                <el-select size="small" v-model="form.type" placeholder="类型" style="width: 100%">
                     <el-option label="全部" :value="-1"></el-option>
                     <el-option
                             v-for="item in typeList"
@@ -27,7 +27,7 @@
                     <el-form>
                         <el-row :gutter="10">
                             <el-col :span="6">
-                                <el-form-item label="类型">{{ props.row.type }}</el-form-item>
+                                <el-form-item label="类型">{{ props.row.type_name }}</el-form-item>
                             </el-col>
                             <el-col :span="6">
                                 <el-form-item label="名称">{{props.row.name}}</el-form-item>
@@ -36,7 +36,8 @@
                                 <el-form-item label="内容">{{props.row.content}}</el-form-item>
                             </el-col>
                             <el-col :span="6">
-                                <el-form-item label="目标机构/电话">{{props.row.target_id}}</el-form-item>
+                                <el-form-item label="目标机构/电话">{{props.row.target_name}}/{{props.row.target_phone}}
+                                </el-form-item>
                             </el-col>
                             <el-col :span="6">
                                 <el-form-item label="活动时间">{{props.row.event_time |date_filter}}</el-form-item>
@@ -45,32 +46,24 @@
                                 <el-form-item label="备注">{{props.row.remark}}</el-form-item>
                             </el-col>
                             <el-col :span="6">
-                                <el-form-item label="主导人/手机">{{props.row.chairman_id}}</el-form-item>
+                                <el-form-item label="主导人/手机">{{props.row.charity_name}}/{{props.row.chairmain_pnone}}
+                                </el-form-item>
                             </el-col>
                         </el-row>
                     </el-form>
                 </template>
             </el-table-column>
             <el-table-column prop="id" label="编号" width="60"></el-table-column>
-            <el-table-column prop="type" label="类型"  width="60">
-                <template slot-scope="props">
-                    <span>{{props.row.type }}</span>
-                </template>
+            <el-table-column prop="type_name" label="类型" width="60">
             </el-table-column>
             <el-table-column prop="name" label="名称"></el-table-column>
-
-            <el-table-column prop="remark" label="备注" show-overflow-tooltip></el-table-column>
-            <el-table-column prop="status" label="状态"  width="80">
+            <el-table-column prop="status" label="状态" width="80">
                 <template slot-scope="props">
                     {{props.row.status | event_status_filter}}
                 </template>
             </el-table-column>
-            <el-table-column prop="author" label="创建人"  width="100"></el-table-column>
-            <el-table-column label="创建时间"  width="160">
-                <template slot-scope="props">
-                    <span>{{props.row.create_time | date_filter}}</span>
-                </template>
-            </el-table-column>
+            <el-table-column prop="charity_name" label="主导人"  ></el-table-column>
+            <el-table-column prop="target_name" label="目标机构"  ></el-table-column>
             <el-table-column label="操作" width="200">
                 <template slot-scope="props">
                     <div>
@@ -89,7 +82,7 @@
                            :page-size="size"></el-pagination>
         </div>
         <CharityEventDialog ref="dialog" :refresh="refresh"></CharityEventDialog>
-        <JoinListDialog ref="joinDialog" ></JoinListDialog>
+        <JoinListDialog ref="joinDialog"></JoinListDialog>
     </div>
 </template>
 <script>
@@ -130,7 +123,7 @@
         methods: {
             loadTypes(type){
                 const that = this;
-                that.$http.post("/api/dict/queryList",JSON.stringify({
+                that.$http.post("/api/dict/queryList", JSON.stringify({
                     type: type
                 })).then(res => {
                     that.typeList = res.data;
@@ -142,7 +135,7 @@
                 const that = this;
                 that.loading = true;
                 const requestData = {...that.form, page: that.page - 1, size: that.size};
-                if(requestData.type == -1){
+                if (requestData.type == -1) {
                     requestData.type = null;
                 }
                 that.$http.post("/api/charityEvent/queryPage", JSON.stringify(requestData)).then(res => {
@@ -179,10 +172,10 @@
                 });
             },
             doShowJoin(row){
-                 this.$refs["joinDialog"].showDialog(row.id);
+                this.$refs["joinDialog"].showDialog(row.id);
             }
         },
-        components: {CharityEventDialog,JoinListDialog}
+        components: {CharityEventDialog, JoinListDialog}
     }
 </script>
 <style scoped>

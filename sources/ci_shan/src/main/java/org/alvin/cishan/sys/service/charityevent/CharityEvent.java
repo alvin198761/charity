@@ -67,8 +67,13 @@ public class CharityEvent {
 	private Date create_time;//  create_time
 
 	//此处可添加查询显示辅助字段
-
-	private String chiarmain_name;
-	private String target_name ;
+	@ApiModelProperty(value = "主导人", dataType = "String")
+	private String charity_name;//主导人
+	@ApiModelProperty(value = "目标人", dataType = "String")
+	private String target_name ;//目标人
+	@ApiModelProperty(value = "创建人", dataType = "String")
+	private String user_name;//建人
+	@ApiModelProperty(value = "类型名称", dataType = "String")
+	private String type_name; //类型名称
 
 }

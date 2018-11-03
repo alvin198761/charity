@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80000
 File Encoding         : 65001
 
-Date: 2018-10-30 12:02:03
+Date: 2018-11-03 15:54:56
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -154,6 +154,8 @@ CREATE TABLE `admin_sys_user` (
 -- ----------------------------
 -- Records of admin_sys_user
 -- ----------------------------
+INSERT INTO `admin_sys_user` VALUES ('1004', 'admin', '21232f297a57a5a743894a0e4a801fc3', null, '1', '1', null, null, null);
+
 -- ----------------------------
 -- Table structure for `base_dict`
 -- ----------------------------
@@ -188,7 +190,7 @@ CREATE TABLE `category` (
   `c_id` bigint(20) DEFAULT NULL,
   `status` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='捐助物资';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='捐助物资';
 
 -- ----------------------------
 -- Records of category
@@ -212,7 +214,7 @@ CREATE TABLE `charity` (
   `category` tinyint(4) DEFAULT NULL,
   `status` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='慈善方';
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='慈善方';
 
 -- ----------------------------
 -- Records of charity
@@ -242,7 +244,7 @@ CREATE TABLE `charity_event` (
 -- ----------------------------
 -- Records of charity_event
 -- ----------------------------
- 
+
 -- ----------------------------
 -- Table structure for `event_user`
 -- ----------------------------
@@ -252,10 +254,14 @@ CREATE TABLE `event_user` (
   `event_id` bigint(20) DEFAULT NULL COMMENT '活动ID',
   `user_id` bigint(20) DEFAULT NULL COMMENT '参与人ID',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='活动参与方';
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='活动参与方';
 
 -- ----------------------------
 -- Records of event_user
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `type_dict`
 -- ----------------------------
 DROP TABLE IF EXISTS `type_dict`;
 CREATE TABLE `type_dict` (
@@ -263,4 +269,20 @@ CREATE TABLE `type_dict` (
   `type` int(11) DEFAULT NULL,
   `name` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='类型字典';
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COMMENT='类型字典';
+
+-- ----------------------------
+-- Records of type_dict
+-- ----------------------------
+INSERT INTO `type_dict` VALUES ('2', '1', '捐款');
+INSERT INTO `type_dict` VALUES ('3', '1', '物资');
+INSERT INTO `type_dict` VALUES ('4', '2', '衣服');
+INSERT INTO `type_dict` VALUES ('5', '2', '书本');
+INSERT INTO `type_dict` VALUES ('6', '2', '学习用品');
+INSERT INTO `type_dict` VALUES ('7', '3', '个人');
+INSERT INTO `type_dict` VALUES ('8', '3', '公司');
+INSERT INTO `type_dict` VALUES ('9', '3', '慈善组织');
+INSERT INTO `type_dict` VALUES ('10', '3', '团体');
+INSERT INTO `type_dict` VALUES ('11', '4', '个人');
+INSERT INTO `type_dict` VALUES ('12', '4', '学校');
+INSERT INTO `type_dict` VALUES ('13', '4', '家庭');
