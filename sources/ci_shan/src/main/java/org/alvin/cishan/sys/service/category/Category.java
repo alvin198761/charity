@@ -1,17 +1,12 @@
 package org.alvin.cishan.sys.service.category;
 
 
-import java.util.Date;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
-import lombok.experimental.Accessors;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.*;
+import lombok.experimental.Accessors;
+
+import java.util.Date;
 
 /**
  * @类说明: 捐助物资--实体类
@@ -41,7 +36,7 @@ public class Category {
 	@ApiModelProperty(value = "count", dataType = "Integer")
 	private Integer count;//  count
 
-	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+	//	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	@ApiModelProperty(value = "create_date", dataType = "Date")
 	private Date create_date;//  create_date
 
@@ -58,5 +53,12 @@ public class Category {
 	private Byte status;//  status
 
 	//此处可添加查询显示辅助字段
+	@ApiModelProperty(value = "创建人名称", dataType = "String")
+	private String user_name; //创建人名称
+	@ApiModelProperty(value = "类型名称", dataType = "String")
+	private String type_name; //类型名称
+	@ApiModelProperty(value = "捐赠人名称", dataType = "String")
+	private String ca_name; //捐赠人名称
+
 
 }

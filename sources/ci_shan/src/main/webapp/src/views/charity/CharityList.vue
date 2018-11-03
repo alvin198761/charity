@@ -33,7 +33,7 @@
                                 <el-form-item label="地址">{{props.row.address}}</el-form-item>
                             </el-col>
                             <el-col :span="6">
-                                <el-form-item label="创建时间">{{props.row.create_date}}</el-form-item>
+                                <el-form-item label="创建时间">{{props.row.create_date |date_filter}}</el-form-item>
                             </el-col>
                             <el-col :span="6">
                                 <el-form-item label="创建人">{{props.row.author}}</el-form-item>
@@ -41,24 +41,26 @@
                             <el-col :span="6">
                                 <el-form-item label="备注">{{props.row.remark}}</el-form-item>
                             </el-col>
-                            <el-col :span="6">
-                                <el-form-item label="状态">{{props.row.status}}</el-form-item>
-                            </el-col>
                         </el-row>
                     </el-form>
                 </template>
             </el-table-column>
             <el-table-column prop="id" label="编号"></el-table-column>
-            <el-table-column prop="type" label="类型"></el-table-column>
+            <el-table-column prop="type_name" label="类型"></el-table-column>
             <el-table-column prop="charity_name" label="姓名"></el-table-column>
             <el-table-column prop="phone_no" label="手机号"></el-table-column>
             <el-table-column prop="gender" label="性别"></el-table-column>
-            <el-table-column prop="status" label="状态"></el-table-column>
+            <el-table-column prop="dept_name" label="所属机构"></el-table-column>
+            <el-table-column prop="status" label="状态">
+                <template slot-scope="props">
+                    {{props.row.status == 0 ? '正常' : '禁用'}}
+                </template>
+            </el-table-column>
             <el-table-column label="操作" width="150">
                 <template slot-scope="props">
                     <div>
                         <el-button type="text" @click="doEdit(props.row)">编辑</el-button>
-                        <el-button type="text" @click="doDelete(props.row)">删除</el-button>
+                        <!--<el-button type="text" @click="doDelete(props.row)">删除</el-button>-->
                     </div>
                 </template>
             </el-table-column>
@@ -124,6 +126,7 @@
                 if(requestData.type == -1){
                     requestData.type = null;
                 }
+                requestData.type_type = 3;
                 that.$http.post("/api/charity/queryPage", JSON.stringify(requestData)).then(res => {
                     that.loading = false;
                     that.dataList = res.data.content;
@@ -147,7 +150,7 @@
                     type: 'warning'
                 }).then(() => {
                     that.$http.delete("/api/charity/delete", {
-                        params: {ids: [row.id]}
+                        params: {id: row.id}
                     }).then(res => {
                         this.$message.success("删除成功");
                         that.refresh();

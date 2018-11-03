@@ -82,10 +82,12 @@ public class CharityDao extends BaseDao {
 	public Page<Charity> queryPage(CharityCond cond) {
 		StringBuilder sb = new StringBuilder("SELECT ");
 		sb.append(this.getSelectedItems(cond));
-		sb.append(" FROM charity t WHERE 1=1");
+		sb.append(" FROM charity t ");
+		sb.append(getJoinTables());
+		sb.append(" WHERE 1=1 ");
 		sb.append(cond.getCondition());
-		//sb.append(cond.getOrderSql());//增加排序子句;
-		//logger.info(SqlUtil.showSql(sb.toString(),cond.getArray()));//显示SQL语句
+//		sb.append(cond.getOrderSql());//增加排序子句;
+		logger.info(SqlUtil.showSql(sb.toString(), cond.getArray()));//显示SQL语句
 		return queryPage(sb.toString(), cond, Charity.class);
 	}
 
@@ -95,7 +97,9 @@ public class CharityDao extends BaseDao {
 	public List<Charity> queryList(CharityCond cond) {
 		StringBuilder sb = new StringBuilder("SELECT ");
 		sb.append(this.getSelectedItems(cond));
-		sb.append(" FROM charity t WHERE 1=1");
+		sb.append(" FROM charity t ");
+		sb.append(getJoinTables());
+		sb.append(" WHERE 1=1 ");
 		sb.append(cond.getCondition());
 		//sb.append(" ORDER BY operate_time DESC");
 		return jdbcTemplate.query(sb.toString(), cond.getArray(), new BeanPropertyRowMapper<>(Charity.class));
@@ -107,7 +111,9 @@ public class CharityDao extends BaseDao {
 	public Charity findById(Long id) {
 		StringBuilder sb = new StringBuilder("SELECT ");
 		sb.append(this.getSelectedItems(null));
-		sb.append(" FROM charity t WHERE 1=1");
+		sb.append(" FROM charity t ");
+		sb.append(getJoinTables());
+		sb.append(" WHERE 1=1 ");
 		sb.append(" AND t.id=?");
 		return jdbcTemplate.queryForObject(sb.toString(), new Object[]{id}, new BeanPropertyRowMapper<>(Charity.class));
 	}
@@ -133,8 +139,23 @@ public class CharityDao extends BaseDao {
 	 */
 	public String getSelectedItems(CharityCond cond) {
 		if (cond == null || cond.getSelectedFields() == null || cond.getSelectedFields().isEmpty()) {
-			return "t.id,t.type,t.charity_name,t.phone_no,t.gender,t.address,t.create_date,t.author,t.remark,t.p_id,t.category,t.status"; //默认所有字段
+			StringBuilder sb = new StringBuilder();
+			sb.append(" t.id,t.type,t.charity_name,t.phone_no,t.gender,t.address,t.create_date,t.author,t.remark,t.p_id,t.category,t.status, ");
+			sb.append(" td.`name` as type_name , tc.charity_name as dept_name,u.`name` as user_name ");
+			return sb.toString(); //默认所有字段
 		}
 		return Joiner.on(",").join(cond.getSelectedFields());
+	}
+
+	/**
+	 * @return
+	 * @方法说明：表连接代码
+	 */
+	public String getJoinTables() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(" LEFT JOIN type_dict td on t.type = td.id ");
+		sb.append(" LEFT JOIN charity tc on t.p_id = t.id ");
+		sb.append(" LEFT JOIN admin_sys_user u on t.author = u.user_id ");
+		return sb.toString();
 	}
 }

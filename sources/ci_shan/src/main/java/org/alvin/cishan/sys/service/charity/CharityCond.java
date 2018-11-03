@@ -72,5 +72,8 @@ public class CharityCond extends BaseCondition {
 	private Byte status;//  status
 
 	//private List<Long> ids;// 主键列表
+	@ApiModelProperty(value = "选择的属性", dataType = "Array")
 	private List<String> selectedFields; //暂时不放入父类
+	@ApiModelProperty(value = "类型的类型", dataType = "Integer")
+	private Integer type_type;
 }

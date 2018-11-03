@@ -22,12 +22,27 @@
                 </el-col>
                 <el-col :span="12">
                     <el-form-item label='数量' prop='count'>
-                        <el-input placeholder='数量'  size="small"  v-model='form.count'></el-input>
+                        <el-input-number  v-model='form.count'  size="small"  :min="1" :max="999999999" label="数量"></el-input-number>
                     </el-form-item>
                 </el-col>
                 <el-col :span="12">
                     <el-form-item label='捐助人' prop='c_id'>
-                        <el-input placeholder='捐助人'  size="small"  v-model='form.c_id'></el-input>
+                        <el-select
+                                v-model='form.c_id'
+                                size="small"
+                                filterable
+                                remote
+                                reserve-keyword
+                                placeholder="捐助人"
+                                :remote-method="queryCharityList"
+                                :loading="loading">
+                            <el-option
+                                    v-for="item in charityList"
+                                    :key="item.id"
+                                    :label="item.charity_name"
+                                    :value="item.id">
+                            </el-option>
+                        </el-select>
                     </el-form-item>
                 </el-col>
                 <el-col>
@@ -67,20 +82,36 @@
                     ]
                 },
                 typeList: [],
+                charityList: [],
+                loading:false
             }
         },
         created: function () {
             this.loadTypes(2);
         },
         methods: {
+            queryCharityList(query){
+                const that = this;
+                that.loading = true;
+                that.$http.post("/api/charity/queryList",JSON.stringify({
+                    charity_name : query,
+                    category: 1
+                })).then(res => {
+                    that.charityList = res.data;
+                    that.loading = false;
+                }).catch(res => {
+                    that.$message.error("获取行善方类型：" + res);
+                    that.loading = false;
+                });
+            },
             loadTypes(type){
                 const that = this;
                 that.$http.post("/api/dict/queryList",JSON.stringify({
                     type: type
                 })).then(res => {
                     that.typeList = res.data;
-                }).catch(re => {
-                    that.$message.error("获取受善方类型：" + res);
+                }).catch(res => {
+                    that.$message.error("获取物资类型：" + res);
                 });
             },
             save() {//新增及修改记录

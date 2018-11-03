@@ -16,12 +16,12 @@
             <el-form-item label="名称">
                 <el-input placeholder="名称" size="small" v-model="form.name"></el-input>
             </el-form-item>
-            <el-form-item label="捐赠人">
-                <el-input placeholder="捐赠人" size="small" v-model="form.c_id"></el-input>
-            </el-form-item>
-            <el-form-item label="状态">
-                <el-input placeholder="状态" size="small" v-model="form.status"></el-input>
-            </el-form-item>
+            <!--<el-form-item label="捐赠人">-->
+                <!--<el-input placeholder="捐赠人" size="small" v-model="form.c_id"></el-input>-->
+            <!--</el-form-item>-->
+            <!--<el-form-item label="状态">-->
+                <!--<el-input placeholder="状态" size="small" v-model="form.status"></el-input>-->
+            <!--</el-form-item>-->
             <el-form-item>
                 <el-button icon="search" @click="refresh" title="根据输入的条件查询" size="small">查询</el-button>
                 <el-button type="primary" icon="plus" @click="doAdd()" title="添加" size="small">添加</el-button>
@@ -33,27 +33,28 @@
                     <el-form>
                         <el-row :gutter="10">
                             <el-col :span="6">
-                                <el-form-item label="create_date">{{props.row.create_date}}</el-form-item>
+                                <el-form-item label="创建时间">{{props.row.create_date | date_filter}}</el-form-item>
                             </el-col>
                             <el-col :span="6">
-                                <el-form-item label="author">{{props.row.author}}</el-form-item>
+                                <el-form-item label="创建人">{{props.row.user_name}}</el-form-item>
                             </el-col>
                             <el-col :span="6">
-                                <el-form-item label="remark">{{props.row.remark}}</el-form-item>
+                                <el-form-item label="备注">{{props.row.remark}}</el-form-item>
                             </el-col>
                         </el-row>
                     </el-form>
                 </template>
             </el-table-column>
             <el-table-column prop="id" label="编号"></el-table-column>
-            <el-table-column prop="type" label="类型"></el-table-column>
+            <el-table-column prop="type_name" label="类型"></el-table-column>
             <el-table-column prop="name" label="名称"></el-table-column>
             <el-table-column prop="count" label="数量"></el-table-column>
-            <el-table-column prop="create_date" label="创建时间"></el-table-column>
-            <el-table-column prop="author" label="创建人"></el-table-column>
-            <el-table-column prop="remark" label="备注"></el-table-column>
-            <el-table-column prop="c_id" label="捐赠人"></el-table-column>
-            <el-table-column prop="status" label="状态"></el-table-column>
+            <el-table-column prop="ca_name" label="捐赠人"></el-table-column>
+            <el-table-column prop="status" label="状态">
+                <template slot-scope="props">
+                    {{props.row.status | category_status_filter}}
+                </template>
+            </el-table-column>
             <el-table-column label="操作" width="150">
                 <template slot-scope="props">
                     <div>
@@ -141,11 +142,12 @@
                     type: 'warning'
                 }).then(() => {
                     that.$http.delete("/api/category/delete", {
-                        params: {ids: [row.id]}
+                        params: {id: row.id}
                     }).then(res => {
                         this.$message.success("删除成功");
                         that.refresh();
                     }).catch(res => {
+                        console.error(res);
                         that.$message.error("删除失败：" + res);
                     });
                 }).catch(() => {

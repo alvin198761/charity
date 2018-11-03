@@ -27,7 +27,7 @@
                     <el-form>
                         <el-row :gutter="10">
                             <el-col :span="6">
-                                <el-form-item label="类型">{{props.row.type | event_type_filter}}</el-form-item>
+                                <el-form-item label="类型">{{ props.row.type }}</el-form-item>
                             </el-col>
                             <el-col :span="6">
                                 <el-form-item label="名称">{{props.row.name}}</el-form-item>
@@ -53,17 +53,21 @@
             </el-table-column>
             <el-table-column prop="id" label="编号" width="60"></el-table-column>
             <el-table-column prop="type" label="类型"  width="60">
-                <template scope="props">
-                    <span>{{props.row.type | event_type_filter}}</span>
+                <template slot-scope="props">
+                    <span>{{props.row.type }}</span>
                 </template>
             </el-table-column>
             <el-table-column prop="name" label="名称"></el-table-column>
 
             <el-table-column prop="remark" label="备注" show-overflow-tooltip></el-table-column>
-            <el-table-column prop="status" label="状态"  width="60"></el-table-column>
+            <el-table-column prop="status" label="状态"  width="80">
+                <template slot-scope="props">
+                    {{props.row.status | event_status_filter}}
+                </template>
+            </el-table-column>
             <el-table-column prop="author" label="创建人"  width="100"></el-table-column>
             <el-table-column label="创建时间"  width="160">
-                <template scope="props">
+                <template slot-scope="props">
                     <span>{{props.row.create_time | date_filter}}</span>
                 </template>
             </el-table-column>
@@ -85,10 +89,12 @@
                            :page-size="size"></el-pagination>
         </div>
         <CharityEventDialog ref="dialog" :refresh="refresh"></CharityEventDialog>
+        <JoinListDialog ref="joinDialog" ></JoinListDialog>
     </div>
 </template>
 <script>
     import CharityEventDialog from './CharityEventDialog.vue';
+    import JoinListDialog from  './JoinListDialog.vue';
 
     export default {
         data: function () {
@@ -172,11 +178,11 @@
                 }).catch(() => {
                 });
             },
-            doShowJoin(){
-                console.log("----")
+            doShowJoin(row){
+                 this.$refs["joinDialog"].showDialog(row.id);
             }
         },
-        components: {CharityEventDialog}
+        components: {CharityEventDialog,JoinListDialog}
     }
 </script>
 <style scoped>

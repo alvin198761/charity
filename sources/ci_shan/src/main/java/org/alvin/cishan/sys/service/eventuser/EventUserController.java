@@ -14,7 +14,7 @@ import java.util.List;
 * @date : 2018-10-30 11:50:24
 **/
 @RestController
-@RequestMapping("eventUser")
+@RequestMapping("api/eventUser")
 public class EventUserController {
 
 	@SuppressWarnings("unused")
@@ -31,13 +31,12 @@ public class EventUserController {
 	}
 
     /**
-    * @方法说明： 删除活动参与方记录(多条)
+    * @方法说明： 删除活动参与方记录(
     */
-	@PostMapping("delete")
-	public int delete(@RequestParam("ids[]") Long ids[]) {
-		return service.delete(ids);
+	@RequestMapping("delete")
+	public int delete(@RequestParam("id") Long id) {
+		return service.delete(new Long[]{id});
 	}
-
     /**
     * @方法说明： 修改活动参与方记录
     */
@@ -65,7 +64,7 @@ public class EventUserController {
     /**
     * @方法说明： 按主键查单个活动参与方记录
     */
-	@PostMapping("findById")
+	@RequestMapping("findById")
 	public EventUser findById(@RequestParam("id") Long id) {
 		return service.findById(id);
 	}

@@ -72,7 +72,8 @@
                         {required: true, message: '请输入联系方式', trigger: 'blur'},
                     ]
                 },
-                deptLists: []
+                deptLists: [],
+                typeList: []
             }
         },
         created(){

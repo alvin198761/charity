@@ -77,10 +77,13 @@ public class EventUserDao extends BaseDao {
     public Page<EventUser> queryPage(EventUserCond cond) {
         StringBuilder sb = new StringBuilder("SELECT ");
         sb.append(this.getSelectedItems(cond));
-        sb.append(" FROM event_user t WHERE 1=1");
+        sb.append(" FROM event_user t ");
+        sb.append(getJoinTables());
+        sb.append(" WHERE 1=1 ");
         sb.append(cond.getCondition());
+        sb.append(" order by id desc");
         //sb.append(cond.getOrderSql());//增加排序子句;
-        //logger.info(SqlUtil.showSql(sb.toString(),cond.getArray()));//显示SQL语句
+        logger.info(SqlUtil.showSql(sb.toString(),cond.getArray()));//显示SQL语句
         return queryPage(sb.toString(), cond, EventUser.class);
     }
     
@@ -90,8 +93,11 @@ public class EventUserDao extends BaseDao {
     public List<EventUser> queryList(EventUserCond cond) {
         StringBuilder sb = new StringBuilder("SELECT ");
         sb.append(this.getSelectedItems(cond));
-        sb.append(" FROM event_user t WHERE 1=1");
+        sb.append(" FROM event_user t ");
+        sb.append(getJoinTables());
+        sb.append(" WHERE 1=1 ");
     	sb.append(cond.getCondition());
+    	sb.append(" order by id desc");
     	//sb.append(" ORDER BY operate_time DESC");
     	return jdbcTemplate.query(sb.toString(), cond.getArray(), new BeanPropertyRowMapper<>(EventUser.class));
     }
@@ -128,8 +134,22 @@ public class EventUserDao extends BaseDao {
     */
     public String getSelectedItems(EventUserCond cond){
         if(cond == null || cond.getSelectedFields() == null || cond.getSelectedFields().isEmpty()){
-        return "t.id,t.event_id,t.user_id"; //默认所有字段
+            StringBuilder sb = new StringBuilder();
+            sb.append(" t.id,t.event_id,t.user_id, ");
+            sb.append(" ce.`name` as event_name ,c.charity_name as join_user_name ");
+            return sb.toString();
         }
         return Joiner.on(",").join(cond.getSelectedFields());
+    }
+
+    /**
+     * @return
+     * @方法说明：表连接代码
+     */
+    public String getJoinTables() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(" LEFT JOIN charity_event ce on t.event_id = ce.id ");
+        sb.append(" LEFT JOIN charity c on t.user_id = c.id and c.category = 1 ");
+        return sb.toString();
     }
 }

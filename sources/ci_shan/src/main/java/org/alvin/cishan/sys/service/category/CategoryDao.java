@@ -22,21 +22,21 @@ public class CategoryDao extends BaseDao {
 	private StringBuilder insert = new StringBuilder();
 
 	/**
-	 * @方法说明：  构造方法,用于拼加SQL及初始化工作
+	 * @方法说明： 构造方法, 用于拼加SQL及初始化工作
 	 */
-	public CategoryDao () {
+	public CategoryDao() {
 		insert.append("INSERT INTO category (type,name,count,create_date,author,remark,c_id,status) ");
 		insert.append(" VALUES (:type,:name,:count,:create_date,:author,:remark,:c_id,:status)");
 	}
 
 	/**
-	 * @方法说明：  新增捐助物资记录
+	 * @方法说明： 新增捐助物资记录
 	 */
 	public int save(Category vo) {
 		StringBuilder sql = new StringBuilder();
 		sql.append("REPLACE INTO category (id,type,name,count,create_date,author,remark,c_id,status)");
 		sql.append(" VALUES (?,?,?,?,?,?,?,?,?) ");
-		Object[] params ={ vo.getId(),vo.getType(),vo.getName(),vo.getCount(),vo.getCreate_date(),vo.getAuthor(),vo.getRemark(),vo.getC_id(),vo.getStatus() };
+		Object[] params = {vo.getId(), vo.getType(), vo.getName(), vo.getCount(), vo.getCreate_date(), vo.getAuthor(), vo.getRemark(), vo.getC_id(), vo.getStatus()};
 		//logger.info(SqlUtil.showSql(sql.toString(), params));//显示SQL语句
 		return jdbcTemplate.update(sql.toString(), params);
 	}
@@ -70,7 +70,7 @@ public class CategoryDao extends BaseDao {
 		StringBuilder sql = new StringBuilder();
 		sql.append("UPDATE category SET type=?,name=?,count=?,create_date=?,author=?,remark=?,c_id=?,status=? ");
 		sql.append(" WHERE id=? ");
-		Object[] params = {vo.getType(),vo.getName(),vo.getCount(),vo.getCreate_date(),vo.getAuthor(),vo.getRemark(),vo.getC_id(),vo.getStatus(),vo.getId()};
+		Object[] params = {vo.getType(), vo.getName(), vo.getCount(), vo.getCreate_date(), vo.getAuthor(), vo.getRemark(), vo.getC_id(), vo.getStatus(), vo.getId()};
 		return jdbcTemplate.update(sql.toString(), params);
 	}
 
@@ -80,7 +80,9 @@ public class CategoryDao extends BaseDao {
 	public Page<Category> queryPage(CategoryCond cond) {
 		StringBuilder sb = new StringBuilder("SELECT ");
 		sb.append(this.getSelectedItems(cond));
-		sb.append(" FROM category t WHERE 1=1");
+		sb.append(" FROM category t ");
+		sb.append(getJoinTables());
+		sb.append(" WHERE 1=1 ");
 		sb.append(cond.getCondition());
 		//sb.append(cond.getOrderSql());//增加排序子句;
 		//logger.info(SqlUtil.showSql(sb.toString(),cond.getArray()));//显示SQL语句
@@ -93,8 +95,11 @@ public class CategoryDao extends BaseDao {
 	public List<Category> queryList(CategoryCond cond) {
 		StringBuilder sb = new StringBuilder("SELECT ");
 		sb.append(this.getSelectedItems(cond));
-		sb.append(" FROM category t WHERE 1=1");
+		sb.append(" FROM category t ");
+		sb.append(getJoinTables());
+		sb.append(" WHERE 1=1 ");
 		sb.append(cond.getCondition());
+		sb.append(" order by id desc ");
 		//sb.append(" ORDER BY operate_time DESC");
 		return jdbcTemplate.query(sb.toString(), cond.getArray(), new BeanPropertyRowMapper<>(Category.class));
 	}
@@ -105,7 +110,9 @@ public class CategoryDao extends BaseDao {
 	public Category findById(Long id) {
 		StringBuilder sb = new StringBuilder("SELECT ");
 		sb.append(this.getSelectedItems(null));
-		sb.append(" FROM category t WHERE 1=1");
+		sb.append(" FROM category t ");
+		sb.append(getJoinTables());
+		sb.append(" WHERE 1=1 ");
 		sb.append(" AND t.id=?");
 		return jdbcTemplate.queryForObject(sb.toString(), new Object[]{id}, new BeanPropertyRowMapper<>(Category.class));
 	}
@@ -129,10 +136,27 @@ public class CategoryDao extends BaseDao {
 	/**
 	 * @方法说明：查询参数定制
 	 */
-	public String getSelectedItems(CategoryCond cond){
-		if(cond == null || cond.getSelectedFields() == null || cond.getSelectedFields().isEmpty()){
-			return "t.id,t.type,t.name,t.count,t.create_date,t.author,t.remark,t.c_id,t.status"; //默认所有字段
+	public String getSelectedItems(CategoryCond cond) {
+		if (cond == null || cond.getSelectedFields() == null || cond.getSelectedFields().isEmpty()) {
+			StringBuilder sb = new StringBuilder();
+			sb.append(" t.id,t.type,t.`name`,t.count,t.create_date,t.author,t.remark,t.c_id,t.`status`, ");
+			sb.append(" c.charity_name as ca_name,td.`name` as type_name ,u.`name` as user_name ");
+			return sb.toString(); //默认所有字段
 		}
 		return Joiner.on(",").join(cond.getSelectedFields());
 	}
+
+
+	/**
+	 * @return
+	 * @方法说明：表连接代码
+	 */
+	public String getJoinTables() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(" LEFT JOIN type_dict td on t.type = td.id  and td.type = 2 ");
+		sb.append(" LEFT JOIN charity c ON t.c_id = c.id ");
+		sb.append(" LEFT JOIN admin_sys_user u on t.author = u.user_id ");
+		return sb.toString();
+	}
+
 }

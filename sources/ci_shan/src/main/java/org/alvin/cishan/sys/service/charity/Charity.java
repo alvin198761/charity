@@ -67,5 +67,10 @@ public class Charity {
 	private Byte status;//  status
 
 	//此处可添加查询显示辅助字段
-
+	@ApiModelProperty(value = "类型名称", dataType = "String")
+	private String type_name;//  类型名称
+	@ApiModelProperty(value = "机构名称", dataType = "String")
+	private String dept_name; //机构名称
+	@ApiModelProperty(value = "作者名字", dataType = "String")
+	private String user_name; //作者名字
 }

@@ -5,13 +5,14 @@ axios.defaults.headers.post['Content-Type'] = 'application/json';
 let instance = axios.create({
     validateStatus: function (status) {
         return status == 200 || status == 400;
-    },
+    }
 });
 // Add a response interceptor
 instance.interceptors.response.use(function (response) {
-    if (response.status == 400) {
+    if (response.status == 400 || response.status == 500) {
         Message.error(response.data.error);
         response.data = null;
+        return ;
     }
     if (response.status == 200) {
         if (response.data.errorMsg) {

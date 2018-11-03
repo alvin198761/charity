@@ -33,11 +33,10 @@ public class DictController {
     /**
     * @方法说明： 删除类型字典记录(多条)
     */
-	@PostMapping("delete")
-	public int delete(@RequestParam("ids[]") Long ids[]) {
-		return service.delete(ids);
+	@RequestMapping("delete")
+	public int delete(@RequestParam("id") Long id) {
+		return service.delete(new Long[]{id});
 	}
-
     /**
     * @方法说明： 修改类型字典记录
     */
